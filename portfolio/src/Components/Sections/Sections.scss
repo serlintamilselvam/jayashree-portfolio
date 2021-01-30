@@ -1,0 +1,63 @@
+.section-wrapper {
+
+    background-image: url('../../Assets/Images/background.png');
+    background-size: cover;
+    vertical-align: middle;
+
+    .content-section {
+
+        font-family: 'Poppins-Light';
+        font-size: 1.5rem;
+        font-weight: 100;
+        margin: 2rem 0rem;
+    
+        .section-title {
+            text-align: left;
+            font-family: 'Poppins-Bold';
+            text-transform: uppercase;
+            color: #3137C2;
+            font-size: 2.75rem;
+            margin-bottom: 1.25rem;
+        }
+    
+        .custom-row-spacing {
+            padding: 2rem 0;
+        }
+    
+        .text-content {
+            text-align: left;
+    
+            .section-sub-title {
+                font-family: 'Poppins-Medium';
+                text-transform: capitalize;
+                font-size: 2.25rem;
+                margin-bottom: 1.5rem;
+            }
+    
+            .blue-section-sub-title {
+                font-family: 'Poppins-Bold';
+                color: #3137C2;
+                text-transform: capitalize;
+                font-size: 2.25rem;
+                margin-bottom: 1.5rem;
+            }
+    
+        }
+    
+        .image-content {
+            img {
+                max-width: 400px;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .download-btn {
+        font-size: 2rem;
+        margin: 2rem;
+        padding: 1.5rem;
+        border-radius: 2rem;
+    }
+
+}
