@@ -1,0 +1,21 @@
+.header-wrapper {
+
+    color: #000;
+
+    .logo {
+        max-width: 100px;
+        width: 100%;
+        height: auto;
+    }
+    // .navbar-expand-lg {
+        .navbar-nav {
+            .nav-link {
+                font-size: 2rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                color: #000;
+                font-family: 'Poppins-Medium'
+            }
+        }
+    // } 
+}
