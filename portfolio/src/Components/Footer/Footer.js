@@ -1,20 +1,25 @@
 import './Footer.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { Container, Row, Col } from 'react-bootstrap'
 
 function Footer() {
     return (
-        <div className="jay-footer">
+        <div className="jay-footer" id="contact">
             <Container fluid="lg">
             <Row>
-                <Col xs={4} md={4}>
+                <Col xs={4} md={4} className="contact-text">
                     Contact
                 </Col>
                 <Col xs={4} md={4}>
-                    Email
+                    <a className="open-mail" href="mailto:jayashreesrinivasan12@gmail.com"><FontAwesomeIcon icon="envelope" size="3x"/></a>
                 </Col>
                 <Col xs={4} md={4}>
-                    LinkedIn
+                    <a href="https://www.linkedin.com/in/jayashree-srinivasan-40aa7a179/?originalSubdomain=ca" 
+                    target="_blank"
+                    rel="noreferrer">
+                        <FontAwesomeIcon icon={['fab', 'linkedin']} size="3x"/>
+                    </a>
                 </Col>
             </Row> 
             </Container>
