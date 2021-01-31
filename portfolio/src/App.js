@@ -8,7 +8,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 // Importing custom components
 import Header from './Components/Header/Header'
-import Sections from './Components/Sections/Sections'
+import SectionsContainer from './Components/Sections/SectionsContainer'
 import Footer from './Components/Footer/Footer'
 
 library.add(fab, faEnvelope)
@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Sections />
+      <SectionsContainer />
       <Footer />
     </div>
   );

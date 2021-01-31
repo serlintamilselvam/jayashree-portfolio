@@ -1,7 +1,8 @@
 import React from 'react'
 import './Sections.scss'
 
-import { Container, Row, Col, Button } from 'react-bootstrap'
+// Import Custom component
+import Section from './Section'
 
 //Import Image
 import jay from '../../Assets/Images/jay_photo.jpg'
@@ -9,7 +10,7 @@ import checkoutPage from '../../Assets/Images/checkout_page.png'
 import musicApp from '../../Assets/Images/music_app.png'
 import sampleLogo from '../../Assets/Images/sample_logo.png'
 
-class Sections extends React.Component {
+class SectionsContainer extends React.Component {
     
     constructor() {
         super()
@@ -81,71 +82,4 @@ class Sections extends React.Component {
 
 }
 
-
-function Section(props) {
-    return (
-        <div className="section-wrapper">
-        { props.contents.length > 0 &&
-            props.contents.map((singleContent, key) => {
-                return (
-                    <div className="content-section" key={ key } id={ singleContent.id }>
-                        <Container fluid="lg">
-                            <h2 className="section-title">
-                                { singleContent.title }
-                            </h2>
-                            { singleContent.sections.length > 0 &&
-                                singleContent.sections.map((subsection, sectionKey) => {
-                                    return (
-                                        <Row key={ sectionKey } className="custom-row-spacing">
-                                            <Col xs={{span: 12, order: 1}} md={{ span: 6, order: subsection.image.order }}>
-                                                <ImageContent imageContent={ subsection.image } />
-                                            </Col>
-                                            <Col xs={{span: 12, order: 12}} md={{ span: 6, order: subsection.order }}>
-                                                <TextContent textContent={ subsection } titleColor={ singleContent.isSubTitleBlack } />
-                                            </Col>
-                                        </Row>     
-                                    )
-                                })
-                            }
-                        </Container>
-                    </div>
-                )
-            })
-        }
-        <Button variant="danger" className="download-btn">Download Profile</Button>
-        </div>
-
-    )
-}
-
-function TextContent(props) {
-    return (
-        <div className="text-content">
-            
-            <h3 className={(props.titleColor ? 'section-sub-title' : 'blue-section-sub-title')}>
-                { props.textContent.title }
-            </h3>
-            
-            { props.textContent.texts.length > 0 &&
-                props.textContent.texts.map((singleContent, key) => {
-                    return (
-                        <p key={ key }>{ singleContent }</p>
-                    )
-                })
-            }
-        </div>
-    )
-}
-
-function ImageContent(props) {
-    return (
-        <div className="image-content">
-            <img 
-                alt={ props.imageContent.alt } 
-                src={ props.imageContent.url } 
-            />
-        </div>
-    )
-}
-
-export default Sections
+export default SectionsContainer
