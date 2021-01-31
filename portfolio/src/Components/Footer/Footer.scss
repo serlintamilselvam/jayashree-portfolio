@@ -3,10 +3,10 @@ $breakpoint-tablet: 767px;
 .jay-footer{
 
     padding: 3rem 0rem;
-    background: rosybrown;
+    background: #C4C4C4;
 
     .contact-text {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .open-mail {
@@ -15,7 +15,7 @@ $breakpoint-tablet: 767px;
 
     @media (max-width: $breakpoint-tablet) {
         .contact-text {
-            font-size: 1.75rem;
+            font-size: 1.5rem;
         }
         svg {
             font-size: 2rem;
