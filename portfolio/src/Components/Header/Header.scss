@@ -1,3 +1,5 @@
+$breakpoint-tablet: 767px;
+
 .header-wrapper {
 
     color: #000;
@@ -14,8 +16,15 @@
                 padding-left: 1rem;
                 padding-right: 1rem;
                 color: #000;
-                font-family: 'Poppins-Medium'
+                font-family: 'Poppins-Medium';
+                
+                @media (max-width: $breakpoint-tablet) {
+                    font-size: 1.5rem;
+                }
             }
         }
+
+        
+
     // } 
 }

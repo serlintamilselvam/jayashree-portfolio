@@ -9,12 +9,17 @@ import jay from '../../Assets/Images/jay_photo.jpg'
 import checkoutPage from '../../Assets/Images/checkout_page.png'
 import musicApp from '../../Assets/Images/music_app.png'
 import sampleLogo from '../../Assets/Images/sample_logo.png'
+import letsTalk from '../../Assets/Images/lets_talk.png'
 
 class SectionsContainer extends React.Component {
     
     constructor() {
         super()
         this.state = {
+            letsTalk: {
+                url: letsTalk,
+                alt: "Jayshree Portfolio Website"
+            },
             contents: [{
                 id: "about",
                 title: "About",
@@ -76,7 +81,7 @@ class SectionsContainer extends React.Component {
 
     render() {
         return (
-            <Section contents={ this.state.contents }></Section>
+            <Section contents={ this.state.contents } letsTalk={this.state.letsTalk}></Section>
         )
     }
 

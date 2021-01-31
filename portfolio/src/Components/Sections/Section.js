@@ -1,12 +1,16 @@
 import { Container, Row, Col, Button } from 'react-bootstrap'
 
 //Importing custom Component
+import LetsTalk from './LetsTalk/LetsTalk'
 import TextContent from './TextContent'
 import ImageContent from './ImageContent'
 
 function Section(props) {
     return (
         <div className="section-wrapper">
+
+        <LetsTalk letsTalk={ props.letsTalk } />
+
         { props.contents.length > 0 &&
             props.contents.map((singleContent, key) => {
                 return (
@@ -19,10 +23,10 @@ function Section(props) {
                                 singleContent.sections.map((subsection, sectionKey) => {
                                     return (
                                         <Row key={ sectionKey } className="custom-row-spacing">
-                                            <Col xs={{span: 12, order: 1}} md={{ span: 6, order: subsection.image.order }}>
+                                            <Col xs={{span: 12, order: 12}} md={{ span: 6, order: subsection.image.order }}>
                                                 <ImageContent imageContent={ subsection.image } />
                                             </Col>
-                                            <Col xs={{span: 12, order: 12}} md={{ span: 6, order: subsection.order }}>
+                                            <Col xs={{span: 12, order: 1}} md={{ span: 6, order: subsection.order }}>
                                                 <TextContent textContent={ subsection } titleColor={ singleContent.isSubTitleBlack } />
                                             </Col>
                                         </Row>     
