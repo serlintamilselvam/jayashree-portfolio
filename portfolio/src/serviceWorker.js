@@ -32,7 +32,7 @@ export function register(config) {
     }
 
     window.addEventListener('load', () => {
-      const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
+      const swUrl = '/service-worker.js';
 
       if (isLocalhost) {
         // This is running on localhost. Let's check if a service worker still exists or not.
@@ -51,6 +51,8 @@ export function register(config) {
         registerValidSW(swUrl, config);
       }
     });
+  } else {
+    console.log("Inside this file ", process.env.NODE_ENV)
   }
 }
 
