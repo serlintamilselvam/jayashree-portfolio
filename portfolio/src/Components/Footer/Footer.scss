@@ -1,25 +1,39 @@
 $breakpoint-tablet: 767px;
 
-.jay-footer{
+.footer-wrapper {
 
-    padding: 3rem 0rem;
     background: #C4C4C4;
 
-    .contact-text {
-        font-size: 2rem;
-    }
-
-    .open-mail {
-        color: darkred;
-    }
-
-    @media (max-width: $breakpoint-tablet) {
+    .jay-footer{
+        
+        padding: 3rem 0rem;
+    
         .contact-text {
-            font-size: 1.5rem;
-        }
-        svg {
             font-size: 2rem;
         }
+    
+        .open-mail {
+            color: darkred;
+        }
+    
+        @media (max-width: $breakpoint-tablet) {
+            .contact-text {
+                font-size: 1.5rem;
+            }
+            svg {
+                font-size: 2rem;
+            }
+        }    
     }
 
+    .developer-credits {
+        text-align: right;
+        padding: 0px 20px 0;
+        font-size: 0.85rem;
+
+        a {
+            color: teal;
+        }
+
+    }
 }
