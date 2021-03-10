@@ -13,13 +13,13 @@ function Footer() {
                             Contact
                         </Col>
                         <Col xs={4} md={4}>
-                            <a className="open-mail" href="mailto:jayashreesrinivasan12@gmail.com"><FontAwesomeIcon icon="envelope" size="3x"/></a>
+                            <a className="open-mail" href="mailto:jayashreesrinivasan12@gmail.com"><FontAwesomeIcon icon="envelope" size="2x"/></a>
                         </Col>
                         <Col xs={4} md={4}>
                             <a href="https://www.linkedin.com/in/jayashree-srinivasan-40aa7a179/?originalSubdomain=ca" 
                             target="_blank"
                             rel="noreferrer">
-                                <FontAwesomeIcon icon={['fab', 'linkedin']} size="3x"/>
+                                <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x"/>
                             </a>
                         </Col>
                     </Row> 
