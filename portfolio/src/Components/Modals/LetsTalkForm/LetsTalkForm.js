@@ -12,15 +12,15 @@ const LetsTalkForm = (props) => {
         let taskPerformed = {
             action: actionPerformed
         }
-        if(actionPerformed === 'update') {
-            taskPerformed.editedValue = editedValue
-        } 
 
         props.onChange(taskPerformed)
     }
 
     const handleFormSubmit = (event) => {
         event.preventDefault()
+        let str = 'mailto:jayashreesrinivasan12@gmail.com?subject=' + event.target.elements.subject.value + "&body="
+        str += "Name: " + event.target.elements.name.value + "%0D%0AEmail:" + event.target.elements.email.value + "%0D%0AMessage:" + event.target.elements.message.value
+        window.open(str, "_blank")
         handleChange('save')
 
     }

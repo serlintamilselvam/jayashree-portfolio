@@ -13,7 +13,7 @@ function Footer() {
                             Contact
                         </Col>
                         <Col xs={4} md={4}>
-                            <a className="open-mail" href="mailto:jayashreesrinivasan12@gmail.com"><FontAwesomeIcon icon="envelope" size="2x"/></a>
+                            <a className="open-mail" href="mailto:jayashreesrinivasan12@gmail.com" rel="noreferrer" target="_blank"><FontAwesomeIcon icon="envelope" size="2x"/></a>
                         </Col>
                         <Col xs={4} md={4}>
                             <a href="https://www.linkedin.com/in/jayashree-srinivasan-40aa7a179/?originalSubdomain=ca" 
@@ -24,9 +24,6 @@ function Footer() {
                         </Col>
                     </Row> 
                 </Container>
-            </div>
-            <div className="developer-credits">
-                <b>Developed By: </b><a href="https://ca.linkedin.com/in/serlin-tamilselvam-240a12133" rel="noreferrer" target="_blank">Serlin Tamilselvam</a>
             </div>
         </div>
     )
