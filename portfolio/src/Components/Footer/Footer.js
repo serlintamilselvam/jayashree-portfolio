@@ -26,7 +26,7 @@ function Footer() {
                 </Container>
             </div>
             <div className="developer-credits">
-                <b>Developed By: </b><a href="https://ca.linkedin.com/in/serlin-tamilselvam-240a12133">Serlin Tamilselvam</a>
+                <b>Developed By: </b><a href="https://ca.linkedin.com/in/serlin-tamilselvam-240a12133" rel="noreferrer" target="_blank">Serlin Tamilselvam</a>
             </div>
         </div>
     )
