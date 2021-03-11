@@ -1,4 +1,4 @@
-## Personal Portfolio Website (Jayashree Srnivasan)
+# Personal Portfolio Website (Jayashree Srnivasan)
 
 A ReactJS porfolio website for designer Jayashree Srinivasan. 
 
@@ -6,7 +6,7 @@ The project was bootstrapped with <a href="https://github.com/facebook/create-re
 
 The website is hosted in <a href="https://azure.microsoft.com/" rel="nofollow" target="_blank">Microsoft's Azure</a> as a static web page.
 
-Check out the website here at: <a href="https://www.jayashreesrinivasan.live/" rel="nofollow" target="_blank">https://www.jayashreesrinivasan.live/</a> 
+Check out the website here at: <a href="https://www.jayashreesrinivasan.live/" rel="nofollow" target="_blank">https://www.jayashreesrinivasan.live/</a>
 
-##### Designed by:
+### Designed by:
 1. Jayashree Srinivasan
