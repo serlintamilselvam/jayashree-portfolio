@@ -9,7 +9,7 @@ function Section(props) {
     return (
         <div className="section-wrapper">
 
-        <LetsTalk letsTalk={ props.letsTalk } />
+        <LetsTalk letsTalk={ props.letsTalk } jayashreeText={props.jayashreeText} />
 
         { props.contents.length > 0 &&
             props.contents.map((singleContent, key) => {

@@ -27,6 +27,12 @@ class LetsTalk extends React.Component {
                     show={this.state.letsTalkModal.show}
                     onChange={this.closeLetsTalkModal}/>
                 <Container fluid="lg">
+                    <div className="jay-img-wrapper">
+                        <img className="jayashree-img"
+                            src={ this.props.jayashreeText.url } 
+                            alt={ this.props.jayashreeText.alt }
+                        />
+                    </div>
                     <Row>
                         <Col xs={12} md={4} sm={12} className="lets-talk-img">
                             <img 

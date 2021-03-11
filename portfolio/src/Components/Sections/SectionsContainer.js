@@ -6,10 +6,11 @@ import Section from './Section'
 
 //Import Image
 import jay from '../../Assets/Images/jay_photo.jpg'
-import checkoutPage from '../../Assets/Images/checkout_page.png'
 import musicApp from '../../Assets/Images/music_app.png'
-import sampleLogo from '../../Assets/Images/sample_logo.png'
 import letsTalk from '../../Assets/Images/lets_talk.png'
+import jayashreeText from '../../Assets/Images/jayshree_text.gif'
+import leaderboard from '../../Assets/Images/leaderboard.png'
+import furnitureshop from '../../Assets/Images/furniture_shop.png'
 
 class SectionsContainer extends React.Component {
     
@@ -19,6 +20,10 @@ class SectionsContainer extends React.Component {
             letsTalk: {
                 url: letsTalk,
                 alt: "Jayshree Portfolio Website"
+            },
+            jayashreeText: {
+                url: jayashreeText,
+                alt: "Hi I am Jayashree"
             },
             contents: [{
                 id: "about",
@@ -53,26 +58,26 @@ class SectionsContainer extends React.Component {
                         alt: "Music Player User Interface"
                     }
                 }, {
-                    title: "Checkout Page",
+                    title: "Leader Board",
                     order: 1,
                     texts: [
-                        "The standard checkout page designed for any online shopping, is quite easy to navigate through and make a payment."
+                        "The score board is a mobile app, that displays the ranking of people in a particular day, week and all time. It allows easy understaning of ones self progress as well as their team mates."
                     ],
                     image: {
-                        url: checkoutPage,
+                        url: leaderboard,
                         order: 12,
-                        alt: "Checkout Page"
+                        alt: "Leader Board"
                     }
                 }, {
-                    title: "Sample Logo Design",
+                    title: "The Furniture Store",
                     order: 12,
                     texts: [
-                        "Logo is one of the most important things a business requires to stand out unique. The one that catches the eys stays."
+                        "The furniture store app interface is designed in such a way that it is easy to navigate and shop in the most efficient way. "
                     ],
                     image: {
                         order: 1,
-                        url: sampleLogo,
-                        alt: "Sample Logo Design"
+                        url: furnitureshop,
+                        alt: "The Furniture Store"
                     }
                 }]
             }]
@@ -81,7 +86,7 @@ class SectionsContainer extends React.Component {
 
     render() {
         return (
-            <Section contents={ this.state.contents } letsTalk={this.state.letsTalk}></Section>
+            <Section contents={ this.state.contents } letsTalk={this.state.letsTalk} jayashreeText={this.state.jayashreeText}></Section>
         )
     }
 

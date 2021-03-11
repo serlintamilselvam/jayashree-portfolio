@@ -3,6 +3,23 @@ $breakpoint-small-device: 992px;
 
 .lets-talk {
 
+
+    .jay-img-wrapper {
+
+        text-align: right;
+
+        @media (max-width: $breakpoint-tablet) {
+            text-align: center;
+        }
+
+        .jayashree-img {
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+            margin: 2rem 0;
+        }
+    }
+
     button, a {
         margin-left: 1rem;
         margin-right: 1rem;

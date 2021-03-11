@@ -71,6 +71,8 @@ const LetsTalkForm = (props) => {
                                 <Button variant="primary" className="custom-btn-submit" type="submit">Send Message</Button>
                             </div>
                         </Form>
+                        <div className="bubble-one position-two"><FontAwesomeIcon icon="circle" size="8x"/></div>
+                        <div className="position-three"><FontAwesomeIcon icon="circle" size="9x"/></div>
                     </Container>
                 </Modal.Body>
             </Modal>

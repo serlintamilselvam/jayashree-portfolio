@@ -3,6 +3,8 @@
     .modal-content {
         border-radius: 1.5rem;
         background-color: #FF658A;
+        overflow: hidden;
+        z-index: -1;
     }
 
     .modal-title {
@@ -18,15 +20,30 @@
         padding-top: 0;
 
         .bubble-one {
-            color: green;
+            color: #00FF0A;
             font-size: 1.5rem;
             position: absolute;
-            right: 0%;
-            position: absolute;
             top: -4rem;
-            right: 0rem;
+            right: -2rem;
             opacity: 0.5;
             z-index: 1;
+        }
+
+        .position-two {
+            top: 21rem;
+            color: #FFA800;
+            right: -1.5rem;
+        }
+
+        .position-three {
+            position: absolute;
+            color: #00FF94;
+            right: 0;
+            opacity: 0.5;
+            left: -1rem;
+            bottom: 0%;
+            z-index: -1;
+            top: 22rem;
         }
 
         .form-group {
@@ -44,6 +61,7 @@
             border-color: #21A8F3;
             color: black;
             font-size: 1.15rem;
+            z-index: 9999999;
         }
 
         .form-control {
