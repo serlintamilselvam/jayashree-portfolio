@@ -1,4 +1,4 @@
-# Personal Portfolio Website (Jayashree Srnivasan)
+# Personal Portfolio Website (Jayashree Srinivasan)
 
 A ReactJS porfolio website for designer Jayashree Srinivasan. 
 
