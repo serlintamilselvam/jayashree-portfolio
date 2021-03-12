@@ -50,7 +50,7 @@ class SectionsContainer extends React.Component {
                     title: "Music Player",
                     order: 12,
                     texts: [
-                        "The music player is a poweful application that randomly plays songs from the favourite artist they have chose. The app also plays songs alpahabatically from the chosen artist."
+                        "The music player is a powerful application that randomly plays songs from the favourite artist they have chose. The app also plays songs alphabetically from the chosen artist."
                     ],
                     image: {
                         url: musicApp,
