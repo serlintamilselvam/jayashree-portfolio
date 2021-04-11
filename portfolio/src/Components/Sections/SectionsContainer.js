@@ -5,7 +5,7 @@ import './Sections.scss'
 import Section from './Section'
 
 //Import Image
-import jay from '../../Assets/Images/jay_photo.jpg'
+import jay from '../../Assets/Images/jayashree_profile_pic.jpg'
 import musicApp from '../../Assets/Images/music_app.png'
 import letsTalk from '../../Assets/Images/lets_talk.png'
 import jayashreeText from '../../Assets/Images/jayshree_text.gif'
