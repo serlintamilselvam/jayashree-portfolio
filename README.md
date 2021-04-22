@@ -2,7 +2,7 @@
 
 A ReactJS porfolio website for designer Jayashree Srinivasan. 
 
-The project was bootstrapped with <a href="https://github.com/facebook/create-react-app" rel="nofollow" target="_blank">Create React App</a>
+The project is bootstrapped with <a href="https://github.com/facebook/create-react-app" rel="nofollow" target="_blank">Create React App</a>
 
 The website is hosted in <a href="https://azure.microsoft.com/" rel="nofollow" target="_blank">Microsoft's Azure</a> as a static web page.
 
