@@ -14,7 +14,7 @@ class Project extends React.Component {
             projectsContent: [{
                 id: 1,
                 title: "File manager",
-                projectLink: "",
+                projectLink: "https://www.figma.com/proto/I61z4Oe73xRdSpgsY9jjHG/Untitled?page-id=0%3A1&node-id=1%3A4&viewport=1002%2C3%2C0.648612916469574&scaling=scale-down",
                 subTopics: [{
                     title: 'Project details',
                     value: 'File manager is an easy and powerful file explorer for iOs devices. Because of the simple UI, it’s extremely easy to use. With the file manager, one can simply organize and store files.',
@@ -96,6 +96,8 @@ class Project extends React.Component {
                             <Button 
                                 className="float-right prototype-btn" 
                                 href={this.state.projectsContent[projectId-1].projectLink} 
+                                target="_blank"
+                                rel="nofollow"
                                 variant="link" title="View prototype">View prototype
                             </Button>
                         </div>
