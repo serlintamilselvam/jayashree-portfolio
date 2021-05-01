@@ -4,6 +4,10 @@ $breakpoint-tablet: 992px;
 .footer-wrapper {
     margin: 4rem 0;
 
+    .popover-header {
+        color: #000;
+    }
+
     .btn-text {
         text-align: left;
 
@@ -31,6 +35,11 @@ $breakpoint-tablet: 992px;
 
     .toggle-bar {
         text-align: right;
+
+        img {
+            cursor: pointer;
+        }
+
     }
 
 }
