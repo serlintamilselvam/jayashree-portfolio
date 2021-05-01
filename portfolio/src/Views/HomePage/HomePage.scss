@@ -1,0 +1,113 @@
+$breakpoint-tablet: 767px;
+$breakpoint-min-small-device: 768px;
+
+.home-page {
+
+    background-image: url(../../Assets/Images/website_background_image.png);
+    background-repeat: no-repeat;
+    padding: 3rem 0;
+    background-position: center center;
+    background-size: contain;
+
+    @media (max-width: $breakpoint-min-small-device) {
+        padding: 0;
+        background-size: cover;
+    }
+
+    @media (min-width: $breakpoint-min-small-device) {
+
+        .social-media-links-wrap {
+            position: absolute;
+            left: 55%;
+            top: 0;
+
+            .vertical-line {
+                border-left: 0.25rem solid white;
+                height: 6rem;
+            }
+
+            .icons {
+                margin-left: -0.6rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+
+                a:hover {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+
+        }
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+
+        .social-media-links-wrap {
+            padding: 3rem 0;
+        }
+
+        .vertical-line {
+            border-bottom: 0.25rem solid white;
+            width: 3rem;
+            margin: 0 auto;
+            display: inline-block;
+            margin-bottom: 0.60rem;
+        }
+
+        .icons {
+            display: inline-block;
+            padding: 0rem 1rem;
+        }
+    }
+
+    .greeting-content {
+
+        .jay-text {
+            font-family: 'Kalam-Regular';
+            font-size: 1.75rem;
+        }
+
+        .second-text {
+            font-family: 'Kalam-Regular';
+            padding: 3rem 0rem;
+            line-height: 3.5rem;
+            font-size: 2.25rem;
+            letter-spacing: 0.15rem;
+        }
+
+
+        @media (max-width: $breakpoint-tablet) {
+
+            padding: 2rem 0;
+            padding-bottom: 0;
+
+            .jay-text {
+                font-size: 1.5rem;
+            }
+
+            .second-text {
+                padding: 2rem 0rem;
+                line-height: 2.5rem;
+                font-size: 1.75rem;
+            }
+
+            .social-media-links-wrap {
+                padding: 3rem 0rem;
+            }
+
+        }
+
+
+    }
+
+    .img-content {
+
+        img {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+        }
+
+    }
+
+}

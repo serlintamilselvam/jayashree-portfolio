@@ -1,30 +1,58 @@
 @font-face {
-  font-family: 'Poppins';
-  src: url('./Assets/Fonts/Poppins/Poppins-Regular.ttf');
+  font-family: 'Kalam-Light';
+  src: url('./Assets//Fonts//Kalam/Kalam-Light.ttf');
 }
 
 @font-face {
-  font-family: 'Poppins-Medium';
-  src: url('./Assets//Fonts//Poppins/Poppins-Medium.ttf');
+  font-family: 'Kalam-Regular';
+  src: url('./Assets/Fonts/Kalam/Kalam-Regular.ttf');
 }
 
 @font-face {
-  font-family: 'Poppins-Bold';
-  src: url('./Assets//Fonts/Poppins/Poppins-Bold.ttf')
-}
-
-@font-face {
-  font-family: 'Poppins-Light';
-  src: url('./Assets//Fonts/Poppins/Poppins-Light.ttf');
+  font-family: 'Kalam-Bold';
+  src: url('./Assets/Fonts/Kalam/Kalam-Bold.ttf');
 }
 
 body {
   margin: 0;
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Kalam-Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #030015;
+  color: #fff;
+}
+
+.btn-grad {
+  background-image: linear-gradient(to right, #FF767A 0%, #71609D 90%, #71609D 100%);
+  font-size: 1.5rem;
+}
+
+.btn-grad:hover {
+  border-color: #71609D;
+  background-image: linear-gradient(to right, #71609D 0%, #71609D 20%, #71609D 100%);
+}
+
+.btn-grad:focus {
+  border-color: #71609D;
+  background-color: #71609D;
+}
+
+.background-bubble {
+  background-image: url(./Assets/Images/website_background_other.png);
+  background-repeat: no-repeat;
+  padding: 2rem 0;
+  background-position: center center;
+  background-size: contain;
+
+}
+
+@media screen and (max-width: 768px) {
+  .background-bubble {
+    padding: 0;
+    background-repeat: repeat;
+  }
 }
 
 code {

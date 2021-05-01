@@ -2,29 +2,36 @@ $breakpoint-tablet: 767px;
 
 .header-wrapper {
 
-    color: #000;
+    // color: #000;
+    background-color: #030015!important;
 
     .logo {
-        max-width: 100px;
+        max-width: 180px;
         width: 100%;
         height: auto;
+
+        @media (max-width: $breakpoint-tablet) {
+            max-width: 120px;
+        }
+
     }
-    // .navbar-expand-lg {
-        .navbar-nav {
-            .nav-link {
-                font-size: 2rem;
-                padding-left: 1rem;
-                padding-right: 1rem;
-                color: #000;
-                font-family: 'Poppins-Medium';
-                
-                @media (max-width: $breakpoint-tablet) {
-                    font-size: 1.5rem;
-                }
+
+    .navbar-nav {
+
+        .nav-link {
+            font-size: 1.5rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            font-family: 'Kalam-Regular';
+            
+            @media (max-width: $breakpoint-tablet) {
+                font-size: 1.5rem;
             }
         }
 
-        
+        .nav-link:hover, .nav-link:focus, .nav-link.active {
+            color: #fff;
+        }
 
-    // } 
+    }
 }

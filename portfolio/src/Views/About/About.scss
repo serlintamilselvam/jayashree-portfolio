@@ -1,0 +1,96 @@
+$breakpoint-tablet: 767px;
+$breakpoint-min-small-device: 768px;
+
+.about-jay {
+
+    @media (max-width: $breakpoint-tablet) {
+        .custom-row-spacing {
+            padding: 1rem;
+        }
+    }
+
+    .content-div {
+
+        text-align: left;
+        letter-spacing: .1rem;
+
+        h2 {
+            color: #71609D;
+            font-family: 'Kalam-Bold';
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            margin-bottom: 2rem;
+        }
+
+        .desc-text {
+            margin-bottom: 2rem;
+            line-height: 2rem;
+            font-size: 1.25rem;
+        }
+
+        @media (max-width: $breakpoint-tablet) {
+
+            text-align: center;
+
+            h2 {
+                text-align: left;
+                font-size: 2rem;
+                margin-bottom: 1.5rem;
+            }
+            h3 {
+                text-align: left;
+                margin-bottom: 1.5rem;
+                font-size: 1.25rem;
+            }
+            .desc-text {
+                text-align: left;
+                margin-bottom: 1.5rem;
+                line-height: 2rem;
+                font-size: 1rem;
+            }
+        }
+
+    }
+
+    .img-content {
+
+        text-align: left;
+
+        @media (max-width: $breakpoint-tablet) {
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+
+        }
+
+        @media (min-width: $breakpoint-min-small-device) {
+            img {
+                max-width: 350px;
+                border-radius: 50%;
+            }
+        }
+
+    }
+
+    .education-info {
+
+        text-align: left;
+        padding: 2rem 0;
+
+        div {
+            padding-bottom: 0.75rem;
+
+            span {
+                padding-left: 0.5rem;
+            }
+        }
+    }
+
+}

@@ -1,39 +1,36 @@
-$breakpoint-tablet: 767px;
+$breakpoint-mobile: 767px;
+$breakpoint-tablet: 992px;
 
 .footer-wrapper {
+    margin: 4rem 0;
 
-    background: #C4C4C4;
+    .btn-text {
+        text-align: left;
 
-    .jay-footer{
-
-        padding: 3rem 0rem;
-    
-        .contact-text {
-            font-size: 1.5rem;
-        }
-    
-        .open-mail {
-            color: darkred;
-        }
-    
-        @media (max-width: $breakpoint-tablet) {
-            .contact-text {
-                font-size: 1.5rem;
+        .download-prof {
+            @media (max-width: $breakpoint-tablet) {
+                font-size: 0.75rem;
             }
-            svg {
-                font-size: 2rem;
-            }
-        }    
+        }
+
+        .download-prof, .download-prof:active {
+            background-color: #FD6C75;
+            border-color: #FD6C75;
+            border-radius: 2rem;
+        }
+
+        .download-prof:hover, .download-prof:focus {
+            box-shadow: 0 0 0 0.2rem #FD6C75;
+        }
+
+        @media (min-width: $breakpoint-tablet) {
+
+            padding-left: 2rem;
+        }
     }
 
-    .developer-credits {
+    .toggle-bar {
         text-align: right;
-        padding: 0px 20px 0;
-        font-size: 0.85rem;
-
-        a {
-            color: teal;
-        }
-
     }
+
 }

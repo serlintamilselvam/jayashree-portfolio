@@ -1,32 +1,26 @@
+import React from 'react'
 import './Footer.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, Button } from 'react-bootstrap'
 
-function Footer() {
-    return (
-        <div className="footer-wrapper">
-            <div className="jay-footer" id="contact">
-                <Container fluid="lg">
+
+class Footer extends React.Component {
+
+    render() {
+        return (
+            <div className="footer-wrapper">
+                <Container>
                     <Row>
-                        <Col xs={4} md={4} className="contact-text">
-                            Contact
+                        <Col xs={6} md={6} className="btn-text">
+                            <Button variant="danger" className="download-prof">Download profile</Button>
                         </Col>
-                        <Col xs={4} md={4}>
-                            <a className="open-mail" href="mailto:jayashreesrinivasan12@gmail.com" rel="noreferrer" target="_blank"><FontAwesomeIcon icon="envelope" size="2x"/></a>
-                        </Col>
-                        <Col xs={4} md={4}>
-                            <a href="https://www.linkedin.com/in/jayashree-srinivasan-40aa7a179/?originalSubdomain=ca" 
-                            target="_blank"
-                            rel="noreferrer">
-                                <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x"/>
-                            </a>
+                        <Col xs={6} md={6} className="toggle-bar">
                         </Col>
                     </Row> 
                 </Container>
             </div>
-        </div>
-    )
+        )
+    }
 }
 
 export default Footer

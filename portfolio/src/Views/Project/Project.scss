@@ -1,0 +1,98 @@
+$breakpoint-tablet: 767px;
+$breakpoint-min-small-device: 768px;
+
+.single-project {
+
+    
+    @media (max-width: $breakpoint-tablet) {
+        padding: 2rem 0;
+    }
+
+    .custom-contain {
+
+        .title-div-wrap {
+            h1 {
+                text-align: left;
+                text-decoration: underline;
+                font-size: 2rem;
+                margin-bottom: 1.5rem;
+                @media (max-width: $breakpoint-tablet) {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .prototype-btn {
+                background-color: #FD6C75;
+                border-color: #FD6C75;
+                border-radius: 2rem;
+                color: #fff;
+            }
+            .prototype-btn:hover {
+                text-decoration: none;
+            }
+
+        }
+
+        .custom-row-spacing {
+            clear: both;
+        }
+
+        .content-container-wrap {
+            text-align: left;
+            padding: 1rem;
+            background-color: rgba(196, 196, 196, 0.1);
+            line-height: 2rem;
+            letter-spacing: .05rem;
+
+            .content-container {
+                padding-bottom: 1rem;
+
+                .sub-title {
+                    font-family: 'Kalam-Bold';
+                    font-size: 1.5rem;
+                }
+    
+                .sub-desc {
+                    font-size: 1.25rem;
+                    font-family: 'Kalam-Light';
+                }
+
+                @media (max-width: $breakpoint-tablet) {
+                    .sub-title {
+                        font-size: 1.2rem;
+                    }
+
+                    .sub-desc {
+                        font-size: 1rem;
+                    }
+                }
+
+                .img-content {
+                    text-align: center;
+                    padding-bottom: 1rem;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        max-width: 350px;
+                    }
+                }
+            }
+        }
+
+        .next-page-btn {
+            max-width: 70%;
+            margin: 0 auto;
+            margin-top: 2rem;
+            padding-bottom: 3rem;
+
+            .common-btn {
+                background-color: #FD6C75;
+                border-color: #FD6C75;
+                color: #fff;
+                text-decoration: none;
+            }
+
+        }
+    }
+
+}

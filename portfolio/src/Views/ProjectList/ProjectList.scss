@@ -1,0 +1,54 @@
+$breakpoint-tablet: 767px;
+$breakpoint-min-small-device: 768px;
+
+.project-list {
+
+    .custom-contain {
+
+        @media (max-width: $breakpoint-min-small-device) {
+            padding: 2rem 0;
+        }
+
+        @media (min-width: $breakpoint-min-small-device) {
+            padding-bottom: 5rem;
+        }
+
+        h1 {
+            text-align: left;
+            text-decoration: underline;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+    
+        .content-container {
+    
+            text-align: left;
+            padding: 3rem 2rem;
+            background-color: rgba(196, 196, 196, 0.1);
+    
+            .project-text {
+                line-height: 2rem;
+                font-size: 1.25rem;
+                letter-spacing: .05rem;
+            }
+    
+            .btn-wrap {
+    
+                text-align: center;
+                padding-top: 2rem;
+    
+                .btn-grad {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    
+        .img-content {
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 500px;
+            }
+        }
+    }
+}

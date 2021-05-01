@@ -4,21 +4,20 @@ import './App.css';
 // Font Awesome Icons
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faCircle } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faCircle, faHome, 
+  faHandSpock, faMapMarkerAlt, faGraduationCap,
+  faArrowRight, faArrowLeft} from '@fortawesome/free-solid-svg-icons'
 
 // Importing custom components
-import Header from './Components/Header/Header'
-import SectionsContainer from './Components/Sections/SectionsContainer'
-import Footer from './Components/Footer/Footer'
+import Router from './Routes/Routes'
 
-library.add(fab, faEnvelope, faCircle)
+library.add(fab, faEnvelope, faCircle, 
+    faHome, faHandSpock, faMapMarkerAlt, faGraduationCap, faArrowRight, faArrowLeft)
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <SectionsContainer />
-      <Footer />
+      <Router />
     </div>
   );
 }
