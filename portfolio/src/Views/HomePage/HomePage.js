@@ -39,13 +39,13 @@ class HomePage extends React.Component {
                                     </a>
                                 </div>
                                 <div className="icons">
-                                    <a href="https://www.linkedin.com/in/jayashree-srinivasan-40aa7a179/?originalSubdomain=ca" target="_blank"
+                                    <a href="https://instagram.com/jayashree_srinivasan_?igshid=1x9bp3l11rvxe" target="_blank"
                                         rel="noreferrer">
                                             <FontAwesomeIcon icon={['fab', 'instagram-square']} color="#cd486b" size="2x" />
                                     </a>
                                 </div>
                                 <div className="icons">
-                                    <a href="https://www.linkedin.com/in/jayashree-srinivasan-40aa7a179/?originalSubdomain=ca" target="_blank"
+                                    <a href="https://www.facebook.com/manis12987789" target="_blank"
                                         rel="noreferrer">
                                             <FontAwesomeIcon icon={['fab', 'facebook']} size="2x" />
                                     </a>

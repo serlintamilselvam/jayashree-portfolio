@@ -27,7 +27,7 @@ function Header(props) {
                     <img className="logo" src={ logo } alt="Jayashree Portfolio Logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                <Navbar.Collapse id="basic-navbar-nav" animation="false">
+                <Navbar.Collapse id="basic-navbar-nav" animation="true">
                     <Nav className="ml-auto">
                         {
                             pageData.map((singleValue, key) => {

@@ -27,9 +27,10 @@ body {
 .btn-grad {
   background-image: linear-gradient(to right, #FF767A 0%, #71609D 90%, #71609D 100%);
   font-size: 1.5rem;
+  border-color: #71609d;
 }
 
-.btn-grad:hover {
+.btn-grad:hover, .btn-grad:active {
   border-color: #71609D;
   background-image: linear-gradient(to right, #71609D 0%, #71609D 20%, #71609D 100%);
 }
@@ -37,6 +38,7 @@ body {
 .btn-grad:focus {
   border-color: #71609D;
   background-color: #71609D;
+  box-shadow: 0 0 0 0.2rem rgb(113 96 157 / 50%);
 }
 
 .background-bubble {

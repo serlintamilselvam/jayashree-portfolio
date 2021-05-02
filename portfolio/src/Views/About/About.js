@@ -54,10 +54,10 @@ class About extends React.Component {
                             <h2 className="title-text">About</h2>
                             <h3 className="sub-title-text">Hi, I'm Jayashree Srinivasan</h3>
                             <div className="desc-text">
-                                I am a buddling UX designer, focusing on proving the best experience to users on their journey
+                                I am a budding UX designer, focusing on proving the best experience to users on their journey.
                             </div>
                             <div className="desc-text">
-                                My dream career was to make good changes that directly impact on people. UX designing made it possible for my dreams come true.
+                            My dream career was to make good changes that directly impact people. UX designing made it possible for my dreams to come true.
                             </div>
                             <Button 
                                 variant="success" 

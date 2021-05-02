@@ -72,6 +72,15 @@ class Project extends React.Component {
                     value: 'The competitive app chosen was the built-in file manager app in iOs devices.',
                     hasImage: false
                 }]
+            }, {
+                id: 2,
+                title: "Plant life",
+                projectLink: "https://www.figma.com/proto/5e0lCuczTK7ijssYZb7zX4/Plantlife?page-id=0%3A1&node-id=125%3A1&viewport=-43%2C359%2C0.2573953866958618&scaling=scale-down",
+                subTopics: [{
+                    title: 'Project details',
+                    value: 'Plant life is a plant adoption website, helps people adopt plants with information about maintenance and other sensitivities of the plant. This way it makes it easier for users to decide from a huge variety of plants. Users can also gift plants from this site.',
+                    hasImage: false
+                }]
             }]
         }
     }
