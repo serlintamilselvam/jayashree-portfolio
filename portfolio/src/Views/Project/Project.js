@@ -123,13 +123,17 @@ class Project extends React.Component {
                                                         {
                                                             (!Array.isArray(singleContent.value))? 
                                                                 singleContent.value: 
-                                                                singleContent.value.map((singleValue, singleKey) => {
-                                                                    return (
-                                                                        <ol key={singleKey}>
-                                                                            <li>{singleValue}</li>
-                                                                        </ol>
-                                                                    )
-                                                                })
+                                                                <ol>
+                                                                    {
+                                                                        singleContent.value.map((singleValue, singleKey) => {
+                                                                            return (
+                                                                                    <li key={singleKey}>
+                                                                                        {singleValue}
+                                                                                    </li>
+                                                                            )
+                                                                        })
+                                                                    }
+                                                                </ol>
                                                         }
                                                     </span>
                                                     {

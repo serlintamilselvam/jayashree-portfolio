@@ -55,6 +55,11 @@ $breakpoint-min-small-device: 768px;
                 .sub-desc {
                     font-size: 1.25rem;
                     font-family: 'Kalam-Light';
+
+                    ol {
+                        margin-bottom: 0;
+                    }
+
                 }
 
                 @media (max-width: $breakpoint-tablet) {
