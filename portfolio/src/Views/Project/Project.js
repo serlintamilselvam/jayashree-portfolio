@@ -33,7 +33,7 @@ class Project extends React.Component {
                     hasImage: false
                 }, {
                     title: 'Role',
-                    value: 'DX designer',
+                    value: 'UX designer',
                     hasImage: false
                 }, {
                     title: 'Tools',
