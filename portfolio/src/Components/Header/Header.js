@@ -3,6 +3,7 @@ import './Header.scss'
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 //Import Image
 import logo from '../../Assets/Images/jayashree_logo.png'
@@ -20,8 +21,20 @@ function Header(props) {
         url: "/projects"
     }]
 
+    const chosenTheme = useSelector(state => state.theme)
+
+    let theme = 'dark'
+    if(!chosenTheme.isDarkTheme) {
+        theme = 'light'
+        document.body.style.backgroundColor = "white"
+        document.body.style.color = "black"
+    } else {
+        document.body.style.backgroundColor = "#030015"
+        document.body.style.color = "white"
+    }
+
     return (
-        <Navbar animation="false" bg="light" variant="dark" expand="lg" className="header-wrapper">
+        <Navbar animation="false" bg={theme} variant={theme} expand="lg" className={`header-wrapper banner-${theme}`}>
             <Container>
                 <Navbar.Brand href="/">
                     <img className="logo" src={ logo } alt="Jayashree Portfolio Logo" />

@@ -6,6 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import processImage from '../../Assets/Images/process_image.JPG'
 
+// React Redux
+import { connect } from 'react-redux'
+
 class Project extends React.Component {
 
     constructor() {
@@ -93,6 +96,7 @@ class Project extends React.Component {
 
         const re = /^[0-9\b]+$/
         const projectId = this.props.match.params.id
+        let chosenTheme = (this.props.theme) ? "dark" : "light"
 
         return(
             <div className="single-project background-bubble">
@@ -113,7 +117,7 @@ class Project extends React.Component {
 
                         <Row className="custom-row-spacing">
                             <Col xs={{span: 12, order: 1}} md={{ span: 12, order: 1 }}>
-                                <div className="content-container-wrap">
+                                <div className={`content-container-wrap content-container-wrap-${chosenTheme}`}>
                                     {
                                         this.state.projectsContent[projectId-1].subTopics.map((singleContent, key) => {
                                             return (
@@ -176,4 +180,16 @@ class Project extends React.Component {
 
 }
 
-export default Project
+
+
+const mapStateToProps = (state) => {
+    return {
+        theme: state.theme.isDarkTheme
+    }
+}
+
+const mapDispatchToProps = () => {
+    return {}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps())(Project)

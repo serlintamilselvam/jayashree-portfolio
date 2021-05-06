@@ -4,7 +4,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, withRouter } from "react-router-dom"
 
 // import custom component
-import HomePage from '../Views/HomePage/HomePage'
+import Home from '../Views/Home/Home'
 import About from '../Views/About/About'
 import ProjectList from '../Views/ProjectList/ProjectList'
 import Project from '../Views/Project/Project'
@@ -18,7 +18,7 @@ return (
     <Router>
       <HeaderWithRouter/>
       <Switch>
-        <Route exact path={["/home", "/"]} component={ HomePage } />
+        <Route exact path={["/home", "/"]} component={ Home } />
         <Route exact path="/about" component={ About } />
         <Route exact path="/projects" component={ ProjectList } />
         <Route exact path="/project/list/:id" component={ Project } />

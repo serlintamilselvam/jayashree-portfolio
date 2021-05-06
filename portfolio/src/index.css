@@ -24,6 +24,11 @@ body {
   color: #fff;
 }
 
+.theme-light {
+  background-color: #fff;
+  color: #000;
+}
+
 .btn-grad {
   background-image: linear-gradient(to right, #FF767A 0%, #71609D 90%, #71609D 100%);
   font-size: 1.5rem;

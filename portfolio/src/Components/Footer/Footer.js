@@ -3,15 +3,22 @@ import './Footer.scss'
 
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import darkModeBtn from '../../Assets/Images/dark_mode_btn.png'
+import lightModeBtn from '../../Assets/Images/light_mode_btn.png'
 
+// React Redux
+import { connect } from 'react-redux'
+import { UpdateTheme }  from '../../Actions/theme'
 
 class Footer extends React.Component {
 
     changeWebsiteMode() {
-        alert("Oops! Sorry We are still working on light theme implementation.")
+        this.props.UpdateTheme(!this.props.theme)
     }
 
     render() {
+        
+        let chosenBtn = (this.props.theme) ? darkModeBtn : lightModeBtn
+
         return (
             <div className="footer-wrapper">
                 <Container>
@@ -21,7 +28,7 @@ class Footer extends React.Component {
                         </Col>
                         <Col xs={6} md={6} className="toggle-bar">
                             <img 
-                                src={darkModeBtn} alt="Dark mode enabled"
+                                src={ chosenBtn } alt="Dark mode enabled"
                                 onClick={this.changeWebsiteMode.bind(this)} />
                         </Col>
                     </Row> 
@@ -31,4 +38,17 @@ class Footer extends React.Component {
     }
 }
 
-export default Footer
+const mapStateToProps = (state) => {
+
+    return {
+        theme: state.theme.isDarkTheme
+    }
+}
+
+const mapDispatchToProps = () => {
+    return {
+        UpdateTheme
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps())(Footer)

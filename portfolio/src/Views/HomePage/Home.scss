@@ -21,8 +21,13 @@ $breakpoint-min-small-device: 768px;
             left: 55%;
             top: 0;
 
-            .vertical-line {
+            .vertical-line-dark {
                 border-left: 0.25rem solid white;
+                height: 6rem;
+            }
+
+            .vertical-line-light {
+                border-left: 0.25rem solid black;
                 height: 6rem;
             }
 
@@ -31,8 +36,13 @@ $breakpoint-min-small-device: 768px;
                 margin-top: 1rem;
                 margin-bottom: 1rem;
 
-                a:hover {
+                a.dark:hover {
                     color: #fff;
+                    text-decoration: none;
+                }
+
+                a.light:hover {
+                    color: #000;
                     text-decoration: none;
                 }
             }
@@ -46,8 +56,16 @@ $breakpoint-min-small-device: 768px;
             padding: 3rem 0;
         }
 
-        .vertical-line {
+        .vertical-line-dark {
             border-bottom: 0.25rem solid white;
+            width: 3rem;
+            margin: 0 auto;
+            display: inline-block;
+            margin-bottom: 0.60rem;
+        }
+
+        .vertical-line-light {
+            border-bottom: 0.25rem solid black;
             width: 3rem;
             margin: 0 auto;
             display: inline-block;

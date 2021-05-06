@@ -1,15 +1,18 @@
 import React from 'react'
-import './HomePage.scss'
+import './Home.scss'
 
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ladyRight from '../../Assets/Images/cartoon_girl_right.png'
 import ladyLeft from '../../Assets/Images/cartoon_girl_left.png'
 
+// React Redux
+import { connect } from 'react-redux'
+
 // Import custom components
 import Footer from '../../Components/Footer/Footer' 
 
-class HomePage extends React.Component {
+class Home extends React.Component {
 
 
     redirectToAbout() {
@@ -25,32 +28,40 @@ class HomePage extends React.Component {
             imgUrl = ladyLeft
         }
 
+        let chosenTheme = (this.props.theme) ? "dark" : "light"
+
         return(
-            <div className="home-page">
+            <div className={`home-page theme-${chosenTheme}`}>
                 <Container>
                     <Row className="custom-row-spacing">
                         <Col xs={{span: 12, order: 12}} md={{ span: 2, order: 1 }}>
                             <div className="social-media-links-wrap">
-                                <div className="vertical-line"></div>
+                                <div className={`vertical-line-${chosenTheme}`}></div>
                                 <div className="icons">
-                                    <a href="https://www.linkedin.com/in/jayashree-srinivasan-40aa7a179/?originalSubdomain=ca" target="_blank"
+                                    <a className={`${chosenTheme}`} 
+                                        href="https://www.linkedin.com/in/jayashree-srinivasan-40aa7a179/?originalSubdomain=ca" 
+                                        target="_blank"
                                         rel="noreferrer">
                                             <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" />
                                     </a>
                                 </div>
                                 <div className="icons">
-                                    <a href="https://instagram.com/jayashree_srinivasan_?igshid=1x9bp3l11rvxe" target="_blank"
+                                    <a className={`${chosenTheme}`}
+                                        href="https://instagram.com/jayashree_srinivasan_?igshid=1x9bp3l11rvxe" 
+                                        target="_blank"
                                         rel="noreferrer">
                                             <FontAwesomeIcon icon={['fab', 'instagram-square']} color="#cd486b" size="2x" />
                                     </a>
                                 </div>
                                 <div className="icons">
-                                    <a href="https://www.facebook.com/manis12987789" target="_blank"
+                                    <a className={`${chosenTheme}`}
+                                        href="https://www.facebook.com/manis12987789" 
+                                        target="_blank"
                                         rel="noreferrer">
                                             <FontAwesomeIcon icon={['fab', 'facebook']} size="2x" />
                                     </a>
                                 </div>
-                                <div className="vertical-line"></div>
+                                <div className={`vertical-line-${chosenTheme}`}></div>
                             </div>
                         </Col>
                         <Col xs={{span: 12, order: 8}} md={{ span: 5, order: 8 }}>
@@ -85,4 +96,14 @@ class HomePage extends React.Component {
 
 }
 
-export default HomePage
+const mapStateToProps = (state) => {
+    return {
+        theme: state.theme.isDarkTheme
+    }
+}
+
+const mapDispatchToProps = () => {
+    return {}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps())(Home)

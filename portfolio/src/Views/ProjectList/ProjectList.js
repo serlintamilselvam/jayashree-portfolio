@@ -7,6 +7,9 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 import fileManager from '../../Assets/Images/file_manager.png'
 import plantLife from '../../Assets/Images/plant_life.png'
 
+// React Redux
+import { connect } from 'react-redux'
+
 class ProjectList extends React.Component {
 
     constructor() {
@@ -39,6 +42,9 @@ class ProjectList extends React.Component {
     }
 
     render() {
+
+        let chosenTheme = (this.props.theme) ? "dark" : "light"
+
         return (
             <div className="background-bubble project-list">
                 {
@@ -48,7 +54,7 @@ class ProjectList extends React.Component {
                                 <h1>{ singleContent.title }</h1>
                                 <Row className="custom-row-spacing">
                                     <Col xs={{span: 12, order: singleContent.order.text}} md={{ span: 6, order: singleContent.order.text }} className="content-div">
-                                        <div className="content-container">
+                                        <div className={`content-container content-container-${chosenTheme}`}>
                                             <div className="project-text">
                                                 { singleContent.description }
                                             </div>
@@ -85,4 +91,15 @@ class ProjectList extends React.Component {
     }
 }
 
-export default ProjectList
+
+const mapStateToProps = (state) => {
+    return {
+        theme: state.theme.isDarkTheme
+    }
+}
+
+const mapDispatchToProps = () => {
+    return {}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps())(ProjectList)

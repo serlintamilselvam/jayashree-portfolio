@@ -18,13 +18,13 @@ $breakpoint-min-small-device: 768px;
             text-decoration: underline;
             font-size: 2rem;
             margin-bottom: 2rem;
+            font-weight: bold;
         }
     
         .content-container {
     
             text-align: left;
             padding: 3rem 2rem;
-            background-color: rgba(196, 196, 196, 0.1);
     
             .project-text {
                 line-height: 2rem;
@@ -41,6 +41,14 @@ $breakpoint-min-small-device: 768px;
                     font-size: 1.25rem;
                 }
             }
+        }
+
+        .content-container-dark {
+            background-color: rgba(196, 196, 196, 0.1);
+        }
+
+        .content-container-light {
+            background-color: rgba(0, 0, 0, 0.1);
         }
     
         .img-content {

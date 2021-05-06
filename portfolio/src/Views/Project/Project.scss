@@ -40,7 +40,6 @@ $breakpoint-min-small-device: 768px;
         .content-container-wrap {
             text-align: left;
             padding: 1rem;
-            background-color: rgba(196, 196, 196, 0.1);
             line-height: 2rem;
             letter-spacing: .05rem;
 
@@ -82,6 +81,14 @@ $breakpoint-min-small-device: 768px;
                     }
                 }
             }
+        }
+
+        .content-container-wrap-dark {
+            background-color: rgba(196, 196, 196, 0.1);
+        }
+
+        .content-container-wrap-light {
+            background-color: rgba(0, 0, 0, 0.1);
         }
 
         .next-page-btn {
