@@ -21,7 +21,7 @@ return (
         <Route exact path={["/home", "/"]} component={ Home } />
         <Route exact path="/about" component={ About } />
         <Route exact path="/projects" component={ ProjectList } />
-        <Route exact path="/project/list/:id" component={ Project } />
+        <Route exact path="/project/list/:id" component={ Project }  />
         {/* <Route component = {NoMatch} /> */}
       </Switch>
     </Router>
