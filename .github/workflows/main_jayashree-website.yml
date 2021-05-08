@@ -19,7 +19,7 @@ jobs:
     - name: Set up Node.js version
       uses: actions/setup-node@v1
       with:
-        app_location: "/portfolio"
+        app_location: '/portfolio'
         node-version: '10.x'
 
     - name: npm install, build, and test
