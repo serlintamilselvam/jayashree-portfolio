@@ -9,4 +9,4 @@ The website is hosted in <a href="https://azure.microsoft.com/" rel="nofollow" t
 Check out the website here at: <a href="https://www.jayashreesrinivasan.live/" rel="nofollow" target="_blank">https://www.jayashreesrinivasan.live/</a>
 
 ### Designed by:
-1. Jayashree Srinivasan
+1. Jayashree Srinivasan 
