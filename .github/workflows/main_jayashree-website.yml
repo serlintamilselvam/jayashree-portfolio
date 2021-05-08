@@ -26,14 +26,13 @@ jobs:
         npm install
         npm run build --if-present
         npm run test --if-present
-        echo %PATH%
       working-directory: /home/runner/work/jayashree-portfolio/jayashree-portfolio/portfolio
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v2
       with:
         name: node-app
-        # path: /home/site/repository/portfolio
+        path: .
 
   deploy:
     runs-on: ubuntu-latest
