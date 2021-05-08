@@ -22,8 +22,6 @@ jobs:
         node-version: '10.x'
 
     - name: npm install, build, and test
-      with: 
-        app_location: '/home/site/repository'
       run: |
         npm install
         npm run build --if-present
@@ -33,6 +31,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: node-app
+        app_location: '/home/site/repository'
         path: .
 
   deploy:
@@ -54,5 +53,5 @@ jobs:
       with:
         app-name: 'jayashree-website'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_de27734d4da34c6d8ee795215ee5bffa }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_6df7f3c57b534eb9bd0590bf404f3a3e }}
         package: .
