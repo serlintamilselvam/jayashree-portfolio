@@ -15,8 +15,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      with:
-        repository: jayashree-portfolio/portfolio
 
     - name: Set up Node.js version
       uses: actions/setup-node@v1
@@ -29,7 +27,7 @@ jobs:
         npm run build --if-present
         npm run test --if-present
         echo %PATH%
-      # working-directory: /home/site/repository/portfolio
+      working-directory: /home/runner/work/jayashree-portfolio/jayashree-portfolio/portfolio
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v2
