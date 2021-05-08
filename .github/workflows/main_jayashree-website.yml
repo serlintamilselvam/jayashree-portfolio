@@ -20,13 +20,13 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
-        app_location: '/home/site/repository'
 
     - name: npm install, build, and test
       run: |
         npm install
         npm run build --if-present
         npm run test --if-present
+      working-directory: /home/site/repository/portfolio
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v2
