@@ -28,13 +28,18 @@ function Header(props) {
         theme = 'light'
         document.body.style.backgroundColor = "white"
         document.body.style.color = "black"
+        document.body.style.transition = "all 0.5s linear 0s"
     } else {
         document.body.style.backgroundColor = "#030015"
         document.body.style.color = "white"
+        document.body.style.transition = "all 0.5s linear 0s"
     }
 
     return (
-        <Navbar animation="false" bg={theme} variant={theme} expand="lg" className={`header-wrapper banner-${theme}`}>
+        <Navbar 
+            animation="true" variant={theme} 
+            expand="lg" className={`header-wrapper banner-${theme}`}
+            collapseOnSelect={true}>
             <Container>
                 <Navbar.Brand href="/">
                     <img className="logo" src={ logo } alt="Jayashree Portfolio Logo" />
@@ -43,9 +48,9 @@ function Header(props) {
                 <Navbar.Collapse id="basic-navbar-nav" animation="true">
                     <Nav className="ml-auto">
                         {
-                            pageData.map((singleValue, key) => {
+                            pageData.map((singleValue, i) => {
                                 return (
-                                    <CustomNavLink currentUrl={ props.location.pathname } key={key} data={singleValue} />
+                                    <CustomNavLink currentUrl={ props.location.pathname } key={i} keyvalue={i} data={singleValue} />
                                 )})
                         }
                     </Nav>
@@ -65,13 +70,13 @@ function CustomNavLink(props) {
     }
 
     return (
-        <Link className={`nav-link ${addActive}`} to={props.data.url}>
+        <Nav.Link eventKey={props.keyvalue} as={Link} className={`nav-link ${addActive}`} to={props.data.url}>
             {
                 (props.data.url ==='/') ? 
                     <FontAwesomeIcon icon="home" /> :
                     props.data.name 
             }
-        </Link>
+        </Nav.Link>
     )
 }
 
