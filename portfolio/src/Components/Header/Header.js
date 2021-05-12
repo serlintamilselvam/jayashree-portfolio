@@ -70,7 +70,12 @@ function CustomNavLink(props) {
     }
 
     return (
-        <Nav.Link eventKey={props.keyvalue} as={Link} className={`nav-link ${addActive}`} to={props.data.url}>
+        <Nav.Link 
+            eventKey={props.keyvalue} 
+            as={Link}
+            title={props.data.name}
+            className={`nav-link ${addActive}`} 
+            to={props.data.url}>
             {
                 (props.data.url ==='/') ? 
                     <FontAwesomeIcon icon="home" /> :

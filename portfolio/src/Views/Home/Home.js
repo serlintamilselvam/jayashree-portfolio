@@ -39,6 +39,7 @@ class Home extends React.Component {
                                 <div className={`vertical-line-${chosenTheme}`}></div>
                                 <div className="icons">
                                     <a className={`${chosenTheme}`} 
+                                        title="LinkedIn"
                                         href="https://www.linkedin.com/in/jayashree-srinivasan-40aa7a179/?originalSubdomain=ca" 
                                         target="_blank"
                                         rel="noreferrer">
@@ -47,6 +48,7 @@ class Home extends React.Component {
                                 </div>
                                 <div className="icons">
                                     <a className={`${chosenTheme}`}
+                                        title="Instagram"
                                         href="https://instagram.com/jayashree_srinivasan_?igshid=1x9bp3l11rvxe" 
                                         target="_blank"
                                         rel="noreferrer">
@@ -55,6 +57,7 @@ class Home extends React.Component {
                                 </div>
                                 <div className="icons">
                                     <a className={`${chosenTheme}`}
+                                        title="Facebook"
                                         href="https://www.facebook.com/manis12987789" 
                                         target="_blank"
                                         rel="noreferrer">
