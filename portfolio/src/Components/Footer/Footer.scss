@@ -1,44 +1,14 @@
-$breakpoint-mobile: 767px;
-$breakpoint-tablet: 992px;
+$breakpoint-tablet: 767px;
 
 .footer-wrapper {
-    margin: 4rem 0;
 
-    .popover-header {
-        color: #000;
-    }
-
-    .btn-text {
+    .designer-credit {
+        padding: 1rem 0;
+        position: static;
         text-align: left;
 
-        .download-prof {
-            @media (max-width: $breakpoint-tablet) {
-                font-size: 0.75rem;
-            }
-        }
-
-        .download-prof, .download-prof:active {
-            background-color: #FD6C75;
-            border-color: #FD6C75;
-            border-radius: 2rem;
-            color: #000;
-        }
-
-        .download-prof:hover, .download-prof:focus {
-            box-shadow: 0 0 0 0.2rem #FD6C75;
-        }
-
-        @media (min-width: $breakpoint-tablet) {
-
-            padding-left: 2rem;
-        }
-    }
-
-    .toggle-bar {
-        text-align: right;
-
-        img {
-            cursor: pointer;
+        @media (max-width: $breakpoint-tablet) {
+            font-size: 0.75rem;
         }
 
     }

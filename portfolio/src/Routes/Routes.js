@@ -9,6 +9,7 @@ import About from '../Views/About/About'
 import ProjectList from '../Views/ProjectList/ProjectList'
 import Project from '../Views/Project/Project'
 import Header from '../Components/Header/Header'
+import Footer from '../Components/Footer/Footer'
 
 function Routes() {
 
@@ -24,6 +25,7 @@ return (
         <Route exact path="/project/list/:id" component={ Project }  />
         {/* <Route component = {NoMatch} /> */}
       </Switch>
+      <Footer />
     </Router>
   )
 }

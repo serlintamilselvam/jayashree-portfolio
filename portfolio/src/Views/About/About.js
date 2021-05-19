@@ -24,7 +24,7 @@ class About extends React.Component {
 
     render() {
         return (
-            <div className="about-jay background-bubble">
+            <div className="about-jay background-bubble container-height">
 
                 <LetsTalkForm 
                     show={this.state.letsTalkModal.show}

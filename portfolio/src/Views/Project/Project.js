@@ -144,7 +144,7 @@ class Project extends React.Component {
         let chosenTheme = (this.props.theme) ? "dark" : "light"
 
         return(
-            <div className="single-project background-bubble">
+            <div className="single-project background-bubble container-height">
                 {
                     (projectId === '' || !re.test(projectId) || this.state.projectsContent.length < projectId || projectId<=0) ? '':
 

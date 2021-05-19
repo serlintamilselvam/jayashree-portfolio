@@ -46,7 +46,7 @@ class ProjectList extends React.Component {
         let chosenTheme = (this.props.theme) ? "dark" : "light"
 
         return (
-            <div className="background-bubble project-list">
+            <div className="background-bubble project-list container-height">
                 {
                     this.state.projectsContent.map((singleContent, key) => {
                         return(

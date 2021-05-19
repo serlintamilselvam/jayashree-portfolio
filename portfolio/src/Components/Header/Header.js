@@ -41,7 +41,7 @@ function Header(props) {
             expand="lg" className={`header-wrapper banner-${theme}`}
             collapseOnSelect={true}>
             <Container>
-                <Navbar.Brand href="/">
+                <Navbar.Brand as={Link} to="/">
                     <img className="logo" src={ logo } alt="Jayashree Portfolio Logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>

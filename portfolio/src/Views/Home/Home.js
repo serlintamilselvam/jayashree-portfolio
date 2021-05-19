@@ -10,7 +10,7 @@ import ladyLeft from '../../Assets/Images/cartoon_girl_left.png'
 import { connect } from 'react-redux'
 
 // Import custom components
-import Footer from '../../Components/Footer/Footer' 
+import Theme from '../../Components/Theme/Theme' 
 
 class Home extends React.Component {
 
@@ -31,7 +31,7 @@ class Home extends React.Component {
         let chosenTheme = (this.props.theme) ? "dark" : "light"
 
         return(
-            <div className={`home-page theme-${chosenTheme}`}>
+            <div className={`home-page container-height theme-${chosenTheme}`}>
                 <Container>
                     <Row className="custom-row-spacing">
                         <Col xs={{span: 12, order: 12}} md={{ span: 2, order: 1 }}>
@@ -92,7 +92,7 @@ class Home extends React.Component {
                         </Col>
                     </Row>
                 </Container>
-                <Footer />
+                <Theme />
             </div>
         )
     }
