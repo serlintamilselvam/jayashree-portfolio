@@ -75,9 +75,8 @@ $breakpoint-min-small-device: 768px;
                     text-align: center;
                     padding-bottom: 1rem;
                     img {
-                        width: 100%;
                         height: auto;
-                        max-width: 350px;
+                        max-width: 100%;
                     }
                 }
             }

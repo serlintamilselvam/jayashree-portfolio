@@ -1,10 +1,14 @@
 import React from 'react'
 import './Project.scss'
 
-import { Container, Row, Col, Button } from 'react-bootstrap'
+import { Container, Row, Col, Button, Carousel } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import processImage from '../../Assets/Images/process_image.JPG'
+import plantProcessImage from '../../Assets/Images/plant_process_image.JPG'
+import plantWireFrame1 from '../../Assets/Images/plant_wireframe_1.JPG'
+import plantWireFrame2 from '../../Assets/Images/plant_wireframe_1.JPG'
+import plantWireFrame3 from '../../Assets/Images/plant_wireframe_1.JPG'
 
 // React Redux
 import { connect } from 'react-redux'
@@ -36,7 +40,7 @@ class Project extends React.Component {
                     hasImage: false
                 }, {
                     title: 'Role',
-                    value: 'UX designer',
+                    value: 'DX designer',
                     hasImage: false
                 }, {
                     title: 'Tools',
@@ -53,7 +57,7 @@ class Project extends React.Component {
                     title: 'Process',
                     value: 'A user-centered design process with  focus on quantitative data collection and analysis to extract right design insight.Specifically, personas, empathy maps to capture insight about users mind-set. The insights were condensed to design tools  followed by a rigorous design and feedback process. Each iteration was validated and the prototype was tested by users.',
                     hasImage: true,
-                    imgUrl: processImage
+                    imgUrl: [processImage]
                 }, {
                     title: 'Research',
                     value: 'The main research was to understand how the users are currently accepting the available apps. The main problem we found out was lack of organization. People were made to search for folders which was  such a painful factor. The important finding was there were a lot of file managers for android but only a handful of file manager apps were found on the apple store.',
@@ -81,8 +85,49 @@ class Project extends React.Component {
                 projectLink: "https://www.figma.com/proto/5e0lCuczTK7ijssYZb7zX4/Plantlife?page-id=0%3A1&node-id=125%3A1&viewport=-43%2C359%2C0.2573953866958618&scaling=scale-down",
                 subTopics: [{
                     title: 'Project details',
-                    value: 'Plant life is a plant adoption website, helps people adopt plants with information about maintenance and other sensitivities of the plant. This way it makes it easier for users to decide from a huge variety of plants. Users can also gift plants from this site.',
+                    value: 'Plant Life is a plant adoption website, helps people adopt plants with information about maintenance and other sensitivities of the plant. This way it makes it easier for users to decide from a huge variety of plants. Users can also gift plants from this site.',
                     hasImage: false
+                }, {
+                    title: 'Type',
+                    value: 'Self learning project',
+                    hasImage: false
+                }, {
+                    title: 'Duration',
+                    value: '2.5 weeks',
+                    hasImage: false
+                }, {
+                    title: 'Deliverable',
+                    value: 'High-fidelity interactive prototype demonstrating key functionality',
+                    hasImage: false
+                }, {
+                    title: 'Role',
+                    value: 'DX designer, UI designer',
+                    hasImage: false
+                }, {
+                    title: 'Motivation',
+                    value: [
+                        "Create a design and experience which brings joy and seamless journey to the user while trying to buy or gift plants.",
+                        "Create a competitive UI/UX which stands unique."
+                    ],
+                    hasImage: false
+                }, {
+                    title: 'Reliability',
+                    value: 'Everything must work seamlessly and be as transparent as possible',
+                    hasImage: false
+                }, {
+                    title: 'Process',
+                    value: 'A business-centered process with focus on qualitative data collection and analysis to extract user expectations vs availability. Personas, problem statements, competitive analysis etc., to get the insight of what the design problem and solution should be. Then the design process ->',
+                    hasImage: true,
+                    imgUrl: [plantProcessImage]
+                }, {
+                    title: 'Research',
+                    value: 'The research was conducted on quantitative analysis data which was available online. The data collected was helpful in determining the user needs on an uncommon website.',
+                    hasImage: false
+                }, {
+                    title: 'Wireframes',
+                    value: '“Hi-fi” prototypes',
+                    hasImage: true,
+                    imgUrl: [plantWireFrame1, plantWireFrame2, plantWireFrame3]
                 }]
             }]
         }
@@ -142,10 +187,7 @@ class Project extends React.Component {
                                                     </span>
                                                     {
                                                         (singleContent.hasImage) ? 
-                                                            <div className="img-content">
-                                                                <img src={singleContent.imgUrl} alt="Process" />
-                                                            </div> :
-                                                            ''
+                                                            <CustomCarousel imgUrl = {singleContent.imgUrl} />: ''
                                                     }
                                                 </div>
                                             )
@@ -190,6 +232,34 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = () => {
     return {}
+}
+
+function CustomCarousel(props) {
+    return (
+        (props.imgUrl.length > 1) ? 
+            <Carousel>
+                {props.imgUrl.map((singleImage, imageKey) => {
+                    return (
+                        <Carousel.Item key={imageKey}>
+                            <IndividualItem  singleImage={singleImage} />
+                        </Carousel.Item>
+                    )
+                })}
+            </Carousel>:
+            props.imgUrl.map((singleImage, imageKey) => {
+                return (
+                    <IndividualItem  singleImage={singleImage} key={imageKey} />
+                )
+            })
+    )
+}
+
+function IndividualItem(props) {
+    return (
+        <div className="img-content">
+            <img src={props.singleImage} alt="Process" />
+        </div>
+    )
 }
 
 export default connect(mapStateToProps, mapDispatchToProps())(Project)
