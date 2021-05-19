@@ -7,8 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import processImage from '../../Assets/Images/process_image.JPG'
 import plantProcessImage from '../../Assets/Images/plant_process_image.JPG'
 import plantWireFrame1 from '../../Assets/Images/plant_wireframe_1.JPG'
-import plantWireFrame2 from '../../Assets/Images/plant_wireframe_1.JPG'
-import plantWireFrame3 from '../../Assets/Images/plant_wireframe_1.JPG'
+import plantWireFrame2 from '../../Assets/Images/plant_wireframe_2.JPG'
+import plantWireFrame3 from '../../Assets/Images/plant_wireframe_3.JPG'
 
 // React Redux
 import { connect } from 'react-redux'
