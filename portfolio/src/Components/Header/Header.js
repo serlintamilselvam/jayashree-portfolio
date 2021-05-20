@@ -19,6 +19,9 @@ function Header(props) {
     }, {
         name: "Projects",
         url: "/projects"
+    }, {
+        name: "Favourite",
+        url: "/favourites"
     }]
 
     const chosenTheme = useSelector(state => state.theme)
@@ -78,7 +81,7 @@ function CustomNavLink(props) {
             to={props.data.url}>
             {
                 (props.data.url ==='/') ? 
-                    <FontAwesomeIcon icon="home" /> :
+                    <FontAwesomeIcon icon="home" /> : (props.data.url === '/favourites') ? <FontAwesomeIcon icon={['fas', 'heart']} color="red" /> :
                     props.data.name 
             }
         </Nav.Link>
