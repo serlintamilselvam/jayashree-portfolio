@@ -44,7 +44,7 @@ class LetsTalkForm extends React.Component {
 
         this.form.onformsubmit = (fields) => {
 
-            let adminEmailAddress = process.env.production.REACT_APP_ADMIN_EMAIL_ADDRESS
+            let adminEmailAddress = process.env.REACT_APP_ADMIN_EMAIL_ADDRESS
 
             let data = {
                 "to": adminEmailAddress,
@@ -82,7 +82,7 @@ class LetsTalkForm extends React.Component {
 
     render() {
 
-        console.log("process.env.production. ", process)
+        console.log("process.env.production. ", process.env)
 
         return (
             <div className="lets-talk-wrapper">
