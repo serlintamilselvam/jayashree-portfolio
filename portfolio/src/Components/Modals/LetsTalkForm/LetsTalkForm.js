@@ -44,7 +44,7 @@ class LetsTalkForm extends React.Component {
 
         this.form.onformsubmit = (fields) => {
 
-            let adminEmailAddress = process.env.REACT_APP_ADMIN_EMAIL_ADDRESS
+            let adminEmailAddress = process.env.APPSETTING_REACT_APP_ADMIN_EMAIL_ADDRESS
 
             let data = {
                 "to": adminEmailAddress,
