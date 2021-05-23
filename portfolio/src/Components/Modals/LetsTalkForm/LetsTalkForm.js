@@ -1,5 +1,5 @@
 import React from 'react'
-// import dotenv from 'dotenv'
+import dotenv from 'dotenv'
 import './LetsTalkForm.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -15,7 +15,7 @@ import { LoaderShown, LoaderHidden } from '../../../Actions/loader'
 // API Service
 import EmailService from '../../../Services/EmailService'
 
-// dotenv.config()
+dotenv.config()
 
 const EmailObj = new EmailService()
 
@@ -81,6 +81,9 @@ class LetsTalkForm extends React.Component {
     }
 
     render() {
+
+        console.log("process.env ", process.env)
+
         return (
             <div className="lets-talk-wrapper">
                 <Modal className="custom-modal-style" size="md" backdrop="static" show={this.props.show} keyboard={false} animation={false} onHide={() => this.handleChange('cancel')}>
