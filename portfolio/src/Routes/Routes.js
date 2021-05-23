@@ -11,6 +11,7 @@ import Project from '../Views/Project/Project'
 import Favourite from '../Views/Favourite/Favourite'
 import Header from '../Components/Header/Header'
 import Footer from '../Components/Footer/Footer'
+import FullPageLoader from '../Components/FullPageLoader/FullPageLoader'
 
 function Routes() {
 
@@ -19,6 +20,7 @@ function Routes() {
 return (
     <Router>
       <HeaderWithRouter/>
+      <FullPageLoader />
       <Switch>
         <Route exact path={["/home", "/"]} component={ Home } />
         <Route exact path="/about" component={ About } />

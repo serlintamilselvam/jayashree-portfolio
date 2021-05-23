@@ -1,9 +1,10 @@
 import React from 'react'
 import './Theme.scss'
 
-import { Container, Row, Col, Button } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import darkModeBtn from '../../Assets/Images/dark_mode_btn.png'
 import lightModeBtn from '../../Assets/Images/light_mode_btn.png'
+import resume from '../../Assets/Resume/resume.pdf'
 
 // React Redux
 import { connect } from 'react-redux'
@@ -24,7 +25,7 @@ class Theme extends React.Component {
                 <Container>
                     <Row>
                         <Col xs={6} md={6} className="btn-text">
-                            <Button variant="danger" className="download-prof">Download profile</Button>
+                            <a variant="danger" href={resume} className="download-prof btn btn-danger" download>Download profile</a>
                         </Col>
                         <Col xs={6} md={6} className="toggle-bar">
                             <img 

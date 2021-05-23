@@ -2,8 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
+import ReduxToastr from 'react-redux-toastr'
 import { throttle } from 'lodash'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import 'react-redux-toastr/lib/css/react-redux-toastr.min.css'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -32,6 +35,16 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <App />
+      <ReduxToastr
+        timeOut={4000}
+        newestOnTop={false}
+        preventDuplicates
+        position="top-center"
+        getState={(state) => state.toastr} // This is the default
+        transitionIn="fadeIn"
+        transitionOut="fadeOut"
+        progressBar
+        closeOnToastrClick/>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
