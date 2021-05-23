@@ -14,6 +14,7 @@ import { LoaderShown, LoaderHidden } from '../../../Actions/loader'
 
 // API Service
 import EmailService from '../../../Services/EmailService'
+import { APISettings } from '../../../api'
 
 dotenv.config()
 
@@ -44,10 +45,8 @@ class LetsTalkForm extends React.Component {
 
         this.form.onformsubmit = (fields) => {
 
-            let adminEmailAddress = process.env.REACT_APP_ADMIN_EMAIL_ADDRESS
-
             let data = {
-                "to": adminEmailAddress,
+                "to": APISettings.adminEmailAddress,
                 "subject": "Portfolio: " + fields.subject,
                 "text": "Name: " + fields.name + "\nEmail: " + fields.email + "\nMessage: " + fields.message
             }
@@ -81,9 +80,6 @@ class LetsTalkForm extends React.Component {
     }
 
     render() {
-
-        console.log("process.env.production. ", process.env)
-
         return (
             <div className="lets-talk-wrapper">
                 <Modal className="custom-modal-style" size="md" backdrop="static" show={this.props.show} keyboard={false} animation={false} onHide={() => this.handleChange('cancel')}>
