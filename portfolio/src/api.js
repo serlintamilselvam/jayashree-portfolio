@@ -1,6 +1,6 @@
-import dotenv from 'dotenv'
+// import dotenv from 'dotenv'
 
-dotenv.config()
+// dotenv.config()
 
 export const APISettings = {
     backEndUrl: process.env.REACT_APP_BACKEND_URL, 
