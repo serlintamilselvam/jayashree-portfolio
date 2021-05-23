@@ -81,9 +81,6 @@ class LetsTalkForm extends React.Component {
     }
 
     render() {
-
-        console.log("Process.env: ", process)
-
         return (
             <div className="lets-talk-wrapper">
                 <Modal className="custom-modal-style" size="md" backdrop="static" show={this.props.show} keyboard={false} animation={false} onHide={() => this.handleChange('cancel')}>
