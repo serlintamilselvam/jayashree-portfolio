@@ -4,7 +4,7 @@ import './Theme.scss'
 import { Container, Row, Col } from 'react-bootstrap'
 import darkModeBtn from '../../Assets/Images/dark_mode_btn.png'
 import lightModeBtn from '../../Assets/Images/light_mode_btn.png'
-import resume from '../../Assets/Resume/resume.pdf'
+import resume from '../../Assets/Resume/resume_1.pdf'
 
 // React Redux
 import { connect } from 'react-redux'
