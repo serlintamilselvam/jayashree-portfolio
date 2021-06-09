@@ -19,10 +19,12 @@ function Header(props) {
     }, {
         name: "Projects",
         url: "/projects"
-    }, {
-        name: "Favourite",
-        url: "/favourites"
-    }]
+    }
+    // {
+    //     name: "Favourite",
+    //     url: "/favourites"
+    // }
+    ]
 
     const chosenTheme = useSelector(state => state.theme)
 
