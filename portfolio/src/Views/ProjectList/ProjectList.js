@@ -4,7 +4,7 @@ import './ProjectList.scss'
 import { Container, Row, Col, Button } from 'react-bootstrap'
 
 //Images
-import fileManager from '../../Assets/Images/file_manager.png'
+import beautifulApp from '../../Assets/Images/beautiful_app.png'
 import plantLife from '../../Assets/Images/plant_life.png'
 
 // React Redux
@@ -17,9 +17,9 @@ class ProjectList extends React.Component {
         this.state = {
             projectsContent: [{
                 id: 1,
-                title: "File manager",
-                description: "File manager is an easy and powerful file explorer for iOs devices. Because of the simple UI, it’s extremely easy to use. With the file manager, one can simply organize and store files.",
-                img: fileManager,
+                title: "Beautiful",
+                description: "The ‘Beautiful’  is an iOs application that sells beauty products through an app. Because of the simple UI, it is extremely easy to use. With ‘Beautiful’ one can easily order and get products delivered at doorstep.",
+                img: beautifulApp,
                 order: {
                     img: 12,
                     text: 1

@@ -8,7 +8,7 @@ import Home from '../Views/Home/Home'
 import About from '../Views/About/About'
 import ProjectList from '../Views/ProjectList/ProjectList'
 import Project from '../Views/Project/Project'
-import Favourite from '../Views/Favourite/Favourite'
+// import Favourite from '../Views/Favourite/Favourite'
 import Header from '../Components/Header/Header'
 import Footer from '../Components/Footer/Footer'
 import FullPageLoader from '../Components/FullPageLoader/FullPageLoader'
@@ -26,7 +26,7 @@ return (
         <Route exact path="/about" component={ About } />
         <Route exact path="/projects" component={ ProjectList } />
         <Route exact path="/project/list/:id" component={ Project }  />
-        <Route exact path="/favourites" component={ Favourite } />
+        {/* <Route exact path="/favourites" component={ Favourite } /> */}
         {/* <Route component = {NoMatch} /> */}
       </Switch>
       <Footer />

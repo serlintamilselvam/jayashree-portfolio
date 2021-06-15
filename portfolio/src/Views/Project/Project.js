@@ -9,6 +9,12 @@ import plantProcessImage from '../../Assets/Images/plant_process_image.JPG'
 import plantWireFrame1 from '../../Assets/Images/plant_wireframe_1.JPG'
 import plantWireFrame2 from '../../Assets/Images/plant_wireframe_2.JPG'
 import plantWireFrame3 from '../../Assets/Images/plant_wireframe_3.JPG'
+import lofi1 from '../../Assets/Images/lofi_1.PNG'
+import lofi2 from '../../Assets/Images/lofi_2.PNG'
+import lofi3 from '../../Assets/Images/lofi_3.PNG'
+import hifi1 from '../../Assets/Images/hifi_1.png'
+import hifi2 from '../../Assets/Images/hifi_2.png'
+import hifi3 from '../../Assets/Images/hifi_3.png'
 
 // React Redux
 import { connect } from 'react-redux'
@@ -20,11 +26,11 @@ class Project extends React.Component {
         this.state = {
             projectsContent: [{
                 id: 1,
-                title: "File manager",
-                projectLink: "https://www.figma.com/proto/I61z4Oe73xRdSpgsY9jjHG/Untitled?page-id=0%3A1&node-id=1%3A4&viewport=1002%2C3%2C0.648612916469574&scaling=scale-down",
+                title: "Beautiful",
+                projectLink: "https://www.figma.com/proto/gf4SzUsMtH0PIxAx6vHGZJ/beauty-products?page-id=0%3A1&node-id=1%3A5&viewport=190%2C288%2C0.19974184036254883&scaling=scale-down",
                 subTopics: [{
                     title: 'Project details',
-                    value: 'File manager is an easy and powerful file explorer for iOs devices. Because of the simple UI, it’s extremely easy to use. With the file manager, one can simply organize and store files.',
+                    value: 'The ‘Beautiful’  is an iOs application that sells beauty products through an app. Because of the simple UI, it is extremely easy to use. With ‘Beautiful’ one can easily order and get products delivered at doorstep.',
                     hasImage: false
                 }, {
                     title: 'Type',
@@ -49,7 +55,7 @@ class Project extends React.Component {
                 }, {
                     title: 'Motivation',
                     value: [
-                        "Create an experience which makes it easier to organize resources and access files.",
+                        "Create an experience which makes it easier to order and get to know about products easily.",
                         "Create a competitive UI which stands unique."
                     ],
                     hasImage: false
@@ -60,24 +66,29 @@ class Project extends React.Component {
                     imgUrl: [processImage]
                 }, {
                     title: 'Research',
-                    value: 'The main research was to understand how the users are currently accepting the available apps. The main problem we found out was lack of organization. People were made to search for folders which was  such a painful factor. The important finding was there were a lot of file managers for android but only a handful of file manager apps were found on the apple store.',
+                    value: 'The main research was to understand how the users are currently accepting the available apps. The main problem we found out was lack of organization and product information on a gist. People were made to search for products and their features manually which was  such a painful factor. The important finding was there were a lot of product apps  for android but only a handful of apps were found on the apple store.',
                     hasImage: false
                 }, {
                     title: 'User interviews',
-                    value: 'A mix of 5 graduate students from Bishop’s University were interviewed. They were selected because they were everyday users of the existing app to sort and separate the documents and other folders in their own phone.',
+                    value: 'A mix of 5 graduate students from Bishop’s University were interviewed. They were selected because they were frequent users of the existing app to buy beauty products regularly.',
                     hasImage: false
                 }, {
                     title: 'Few sample questions',
                     value: [
                         'How do you feel about the existing app that you use?',
                         'Any feature that could be added to the app?',
-                        'What is the most painful task to perform?'
+                        'What is the most painful task to perform?',
+                        'Competitive analysis: The competitive app chosen was the product’s close competitor’s app in iOs devices.'
                     ],
                     hasImage: false
                 }, {
-                    title: 'Competitive analysis',
-                    value: 'The competitive app chosen was the built-in file manager app in iOs devices.',
-                    hasImage: false
+                    title: 'Low Fidelity (Lo-Fi) Mockup',
+                    hasImage: true,
+                    imgUrl: [lofi1, lofi2, lofi3]
+                }, {
+                    title: 'High Fidelity (Hi-Fi) Mockup',
+                    hasImage: true,
+                    imgUrl: [hifi1, hifi2, hifi3]
                 }]
             }, {
                 id: 2,

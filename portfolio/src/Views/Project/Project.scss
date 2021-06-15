@@ -61,6 +61,18 @@ $breakpoint-min-small-device: 768px;
 
                 }
 
+                .img-content {
+                    text-align: center;
+                    padding-bottom: 1rem;
+                    max-width: 300px;
+                    margin: 0 auto;
+
+                    img {
+                        height: auto;
+                        max-width: 100%;
+                    }
+                }
+
                 @media (max-width: $breakpoint-tablet) {
                     .sub-title {
                         font-size: 1.2rem;
@@ -69,15 +81,11 @@ $breakpoint-min-small-device: 768px;
                     .sub-desc {
                         font-size: 1rem;
                     }
-                }
 
-                .img-content {
-                    text-align: center;
-                    padding-bottom: 1rem;
-                    img {
-                        height: auto;
+                    .img-content {
                         max-width: 100%;
                     }
+
                 }
             }
         }
