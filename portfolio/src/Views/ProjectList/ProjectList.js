@@ -5,7 +5,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 
 //Images
 import beautifulApp from '../../Assets/Images/beautiful_app.png'
-import plantLife from '../../Assets/Images/plant_life.png'
+import plantLife from '../../Assets/Images/flower_and_bouquet.PNG'
 
 // React Redux
 import { connect } from 'react-redux'
@@ -17,8 +17,8 @@ class ProjectList extends React.Component {
         this.state = {
             projectsContent: [{
                 id: 1,
-                title: "Beautiful",
-                description: "The ‘Beautiful’  is an iOs application that sells beauty products through an app. Because of the simple UI, it is extremely easy to use. With ‘Beautiful’ one can easily order and get products delivered at doorstep.",
+                title: "Self-Care- Products, Mobile Application",
+                description: "The ‘Self-care’ is an iOS application that sells beauty products through an app. Because of the simple UI, it is extremely easy to use. With ‘Self-care’ one can easily order and get products delivered at doorstep.",
                 img: beautifulApp,
                 order: {
                     img: 12,
@@ -26,8 +26,8 @@ class ProjectList extends React.Component {
                 }
             }, {
                 id: 2,
-                title: "Plant life",
-                description: "Plant life is a plant adoption website, helps people adopt plants with information about maintenance and other sensitivities of the plant. This way it makes it easier for users to decide from a huge variety of plants. Users can also gift plants from this site.",
+                title: "Flowers and Bouquet, E-Commerce website",
+                description: "A flower and bouquet website, which helps people to purchase and deliver flowers with message cards and. This website showcases a variety of flowers and bouquets that are grown and prepared by local farmers. It mainly focuses on promoting online business by featuring online purchases, discounts, and scheduled deliveries.",
                 img: plantLife,
                 order: {
                     img: 1,

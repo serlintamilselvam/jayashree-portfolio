@@ -61,11 +61,17 @@ $breakpoint-min-small-device: 768px;
 
                 }
 
+                .carousel-item {
+                    .img-content {
+                        max-width: 700px;
+                    }
+                }
+
                 .img-content {
                     text-align: center;
                     padding-bottom: 1rem;
-                    max-width: 300px;
                     margin: 0 auto;
+                    max-width: 700px;
 
                     img {
                         height: auto;
