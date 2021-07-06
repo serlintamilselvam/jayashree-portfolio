@@ -34,7 +34,7 @@ class Project extends React.Component {
             projectsContent: [{
                 id: 1,
                 title: "Self-Care- Products, Mobile Application",
-                projectLink: "https://www.figma.com/proto/gf4SzUsMtH0PIxAx6vHGZJ/beauty-products?page-id=0%3A1&node-id=1%3A5&viewport=190%2C288%2C0.19974184036254883&scaling=scale-down",
+                projectLink: "https://www.figma.com/proto/gf4SzUsMtH0PIxAx6vHGZJ/Self-Care-products?node-id=1%3A5&scaling=scale-down",
                 subTopics: [{
                     title: 'Project details',
                     value: 'The ‘Self-care’ is an iOS application that sells beauty products through an app. Because of the simple UI, it is extremely easy to use. With ‘Self-care’ one can easily order and get products delivered at doorstep.',
@@ -128,7 +128,7 @@ class Project extends React.Component {
             }, {
                 id: 2,
                 title: "Flowers and Bouquet, E-Commerce website",
-                projectLink: "https://www.figma.com/proto/5e0lCuczTK7ijssYZb7zX4/Plantlife?page-id=0%3A1&node-id=125%3A1&viewport=-43%2C359%2C0.2573953866958618&scaling=scale-down",
+                projectLink: "https://www.figma.com/proto/x5NRX5uqXaa571zUi6S7kF/Flowers-and-Bouquet?node-id=13%3A12&scaling=min-zoom",
                 subTopics: [{
                     title: 'Project details',
                     value: 'A flower and bouquet website, which helps people to purchase and deliver flowers with message cards and. This website showcases a variety of flowers and bouquets that are grown and prepared by local farmers. It mainly focuses on promoting online business by featuring online purchases, discounts, and scheduled deliveries.',
