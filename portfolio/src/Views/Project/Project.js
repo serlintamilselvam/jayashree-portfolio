@@ -127,7 +127,7 @@ class Project extends React.Component {
                 }]
             }, {
                 id: 2,
-                title: "Flowers and Bouquet, E-Commerce website",
+                title: "The Grow Room, E-Commerce website",
                 projectLink: "https://www.figma.com/proto/x5NRX5uqXaa571zUi6S7kF/Flowers-and-Bouquet?node-id=13%3A12&scaling=min-zoom",
                 subTopics: [{
                     title: 'Project details',

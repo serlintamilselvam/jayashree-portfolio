@@ -26,7 +26,7 @@ class ProjectList extends React.Component {
                 }
             }, {
                 id: 2,
-                title: "Flowers and Bouquet, E-Commerce website",
+                title: "The Grow Room, E-Commerce website",
                 description: "A flower and bouquet website, which helps people to purchase and deliver flowers with message cards and. This website showcases a variety of flowers and bouquets that are grown and prepared by local farmers. It mainly focuses on promoting online business by featuring online purchases, discounts, and scheduled deliveries.",
                 img: plantLife,
                 order: {
