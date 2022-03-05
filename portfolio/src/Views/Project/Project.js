@@ -23,6 +23,17 @@ import userJourney1 from '../../Assets/Images/user_journey_1.PNG'
 import sitemap from '../../Assets/Images/sitemap.png'
 import final_ios_output_1 from '../../Assets/Images/final_ios_output_1.png'
 import final_ios_output_2 from '../../Assets/Images/final_ios_output_2.png'
+import designProcess3 from '../../Assets/Images/Project1/design_process.png'
+import infinityHifi1 from '../../Assets/Images/Project1/hifi_1.png'
+import infinityHifi2 from '../../Assets/Images/Project1/hifi_2.png'
+import infinityLowfi1 from '../../Assets/Images/Project1/lofi1.png'
+import infinityLowfi5 from '../../Assets/Images/Project1/lofi5.png'
+import infinityLowfi2 from '../../Assets/Images/Project1/lofi2.png'
+import infinityLowfi3 from '../../Assets/Images/Project1/lofi3.png'
+import infinityLowfi4 from '../../Assets/Images/Project1/lofi4.png'
+import infinityPersona1 from '../../Assets/Images/Project1/persona1.png'
+import infinityPersona2 from '../../Assets/Images/Project1/persona2.png'
+import infinitySiteMap from '../../Assets/Images/Project1/site_map.png'
 
 // React Redux
 import { connect } from 'react-redux'
@@ -95,51 +106,41 @@ class Project extends React.Component {
                     title: 'Process',
                     value: 'A business-centered process with a focus on qualitative data collection and analysis to extract user expectations vs availability. Personas, problem statements, competitive analysis etc., to get the insight of what the design problem and solution should be. Then the design process',
                     hasImage: true,
-                    imgUrl: [{imgUrl:ios}]
+                    imgUrl: [{imgUrl:designProcess3}]
                 }, {
                     title: 'Persona',
                     hasImage: true,
                     imgUrl: [{
-                        imgUrl: persona1
+                        imgUrl: infinityPersona1
                     }, {
-                        imgUrl: persona2
+                        imgUrl: infinityPersona2
                     }]
                 }, {
                     title: 'Site maps',
                     value: 'Site maps are created to organize content and maintain information hierarchy. A hierarchical sitemap outlines the relationship between pages in order of importance.',
                     hasImage: true,
-                    imgUrl: [{imgUrl:sitemap}]
+                    imgUrl: [{imgUrl:infinitySiteMap}]
                 }, {
                     title: 'Low Fidelity (Lo-Fi) Mockup',
                     hasImage: true,
                     imgUrl: [{
-                        imgUrl: lofi1
+                        imgUrl: infinityLowfi1
                     }, {
-                        imgUrl: lofi2
+                        imgUrl: infinityLowfi2
                     }, {
-                        imgUrl: lofi3
+                        imgUrl: infinityLowfi3
+                    }, {
+                        imgUrl: infinityLowfi4
+                    }, {
+                        imgUrl: infinityLowfi5
                     }]
                 }, {
                     title: 'High Fidelity (Hi-Fi) Mockup',
                     hasImage: true,
                     imgUrl: [{
-                        imgUrl: hifi1
+                        imgUrl: infinityHifi1
                     }, {
-                        imgUrl: hifi2
-                    }, {
-                        imgUrl: hifi3
-                    }]
-                }, {
-                    title: 'Reason to choose from the above primitive prototypes',
-                    hasImage: false,
-                    value: 'Primitive prototypes are mainly created to bring up design ideas that demonstrate the best user flow. Now, not all the designs need to be chosen based on exactly how they are designed. A new design can be formed by taking into account all the top features of all the primitive designs. To help us with the decision, we can mark the best features that the team decides on at the meeting and proceed to develop it. This way we eliminate conflicts between which design would have a better reach.' 
-                }, {
-                    title: 'Mockup',
-                    hasImage: true,
-                    imgUrl: [{
-                        imgUrl: final_ios_output_1
-                    }, {
-                        imgUrl: final_ios_output_2
+                        imgUrl: infinityHifi2
                     }]
                 }]
             }, {

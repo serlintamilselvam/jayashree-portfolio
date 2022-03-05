@@ -7,6 +7,7 @@ import CustomCarousel from '../../Components/CustomCarousel/CustomCarousel'
 //Images
 import beautifulApp from '../../Assets/Images/beautiful_app.png'
 import plantLife from '../../Assets/Images/flower_and_bouquet.PNG'
+import eventPrototype from '../../Assets/Images/event_prototype.png'
 import alarm from '../../Assets/Images/MiniProjects/alarm.png'
 import balance from '../../Assets/Images/MiniProjects/balance.png'
 import diary from '../../Assets/Images/MiniProjects/diary.png'
@@ -29,7 +30,7 @@ class ProjectList extends React.Component {
                 id: 1,
                 title: "Infinity - Event planner",
                 description: "Infinity helps people plan and execute events with the help of the company. Through the website, the event planners or the owners can keep track of their vendors, venues, guest list and so on. The web design showcases a variety of events the company has created. ",
-                img: plantLife,
+                img: eventPrototype,
                 order: {
                     img: 12,
                     text: 1
