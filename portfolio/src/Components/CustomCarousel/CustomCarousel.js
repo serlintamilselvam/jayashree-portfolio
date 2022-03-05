@@ -17,7 +17,7 @@ function CustomCarousel(props) {
             </Carousel>:
             props.imgUrl.map((singleImage, imageKey) => {
                 return (
-                    <IndividualItem  singleImage={singleImage} key={imageKey} />
+                    <IndividualItem  singleImage={singleImage.imgUrl} key={imageKey} />
                 )
             })
     )

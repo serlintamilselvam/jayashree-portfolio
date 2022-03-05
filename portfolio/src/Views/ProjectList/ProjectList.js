@@ -27,21 +27,30 @@ class ProjectList extends React.Component {
         this.state = {
             projectsContent: [{
                 id: 1,
-                title: "Self-Care- Products, Mobile Application",
-                description: "The ‘Self-care’ is an iOS application that sells beauty products through an app. Because of the simple UI, it is extremely easy to use. With ‘Self-care’ one can easily order and get products delivered at doorstep.",
-                img: beautifulApp,
+                title: "Infinity - Event planner",
+                description: "Infinity helps people plan and execute events with the help of the company. Through the website, the event planners or the owners can keep track of their vendors, venues, guest list and so on. The web design showcases a variety of events the company has created. ",
+                img: plantLife,
                 order: {
                     img: 12,
                     text: 1
                 }
             }, {
                 id: 2,
+                title: "Self-Care- Products, Mobile Application",
+                description: "The ‘Self-care’ is an iOS application that sells beauty products through an app. Because of the simple UI, it is extremely easy to use. With ‘Self-care’ one can easily order and get products delivered at doorstep.",
+                img: beautifulApp,
+                order: {
+                    img: 1,
+                    text: 12
+                }
+            }, {
+                id: 3,
                 title: "The Grow Room, E-Commerce website",
                 description: "A flower and bouquet website, which helps people to purchase and deliver flowers with message cards and. This website showcases a variety of flowers and bouquets that are grown and prepared by local farmers. It mainly focuses on promoting online business by featuring online purchases, discounts, and scheduled deliveries.",
                 img: plantLife,
                 order: {
-                    img: 1,
-                    text: 12
+                    img: 12,
+                    text: 1
                 }
             }],
             miniProjectsContent: [{
