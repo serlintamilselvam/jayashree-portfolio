@@ -46,7 +46,7 @@ class About extends React.Component {
                                 </div>
                                 <div>
                                     <FontAwesomeIcon icon="map-marker-alt" size="1x" color="#007bff" />
-                                    <span> Montreal, Canada</span>
+                                    <span> Canada</span>
                                 </div>
                             </div>
                         </Col>

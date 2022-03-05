@@ -1,8 +1,9 @@
 import React from 'react'
 import './Project.scss'
 
-import { Container, Row, Col, Button, Carousel } from 'react-bootstrap'
+import { Container, Row, Col, Button } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import CustomCarousel from '../../Components/CustomCarousel/CustomCarousel' 
 
 import plantProcessImage from '../../Assets/Images/plant_process_image.JPG'
 import flower1 from '../../Assets/Images/flower_1.png'
@@ -90,7 +91,7 @@ class Project extends React.Component {
                     title: 'Process',
                     value: 'A user-centered design process with  focus on quantitative data collection and analysis to extract right design insight.Specifically, personas, empathy maps to capture insight about users mind-set. The insights were condensed to design tools  followed by a rigorous design and feedback process. Each iteration was validated and the prototype was tested by users.',
                     hasImage: true,
-                    imgUrl: [ios]
+                    imgUrl: [{imgUrl:ios}]
                 }, {
                     title: 'Research',
                     value: 'The main research was to understand how the users are currently accepting the available apps. The main problem we found out was a lack of organization and product information on a gist. People were made to search for products and their features manually which was such a painful factor. The important finding was there were a lot of productivity apps for android but only a handful of apps were found on the apple store.',
@@ -111,11 +112,23 @@ class Project extends React.Component {
                 }, {
                     title: 'Low Fidelity (Lo-Fi) Mockup',
                     hasImage: true,
-                    imgUrl: [lofi1, lofi2, lofi3]
+                    imgUrl: [{
+                        imgUrl: lofi1
+                    }, {
+                        imgUrl: lofi2
+                    }, {
+                        imgUrl: lofi3
+                    }]
                 }, {
                     title: 'High Fidelity (Hi-Fi) Mockup',
                     hasImage: true,
-                    imgUrl: [hifi1, hifi2, hifi3]
+                    imgUrl: [{
+                        imgUrl: hifi1
+                    }, {
+                        imgUrl: hifi2
+                    }, {
+                        imgUrl: hifi3
+                    }]
                 }, {
                     title: 'Reason to choose from the above primitive prototypes',
                     hasImage: false,
@@ -123,7 +136,11 @@ class Project extends React.Component {
                 }, {
                     title: 'Mockup',
                     hasImage: true,
-                    imgUrl: [final_ios_output_1, final_ios_output_2]
+                    imgUrl: [{
+                        imgUrl: final_ios_output_1
+                    }, {
+                        imgUrl: final_ios_output_2
+                    }]
                 }]
             }, {
                 id: 2,
@@ -182,7 +199,7 @@ class Project extends React.Component {
                     title: 'Process',
                     value: 'A business-centered process with focus on qualitative data collection and analysis to extract user expectations vs availability. Personas, problem statements, competitive analysis etc., to get the insight of what the design problem and solution should be. Then the design process ->',
                     hasImage: true,
-                    imgUrl: [plantProcessImage]
+                    imgUrl: [{imgUrl: plantProcessImage}]
                 }, {
                     title: 'Research',
                     value: 'The research was conducted on quantitative analysis data which was available online. The data collected was helpful in determining the user needs on an uncommon website.',
@@ -190,11 +207,15 @@ class Project extends React.Component {
                 }, {
                     title: 'Persona',
                     hasImage: true,
-                    imgUrl: [persona1, persona2]
+                    imgUrl: [{
+                        imgUrl: persona1
+                    }, {
+                        imgUrl: persona2
+                    }]
                 }, {
                     title: 'User Journey map',
                     hasImage: true,
-                    imgUrl: [userJourney1]
+                    imgUrl: [{imgUrl: userJourney1}]
                 }, {
                     title: 'Research',
                     value: 'The research conducted was a survey after the purchase was made by the users.',
@@ -203,7 +224,7 @@ class Project extends React.Component {
                     title: 'Site maps',
                     value: 'Site maps are created to organize content and maintain information hierarchy. A hierarchical sitemap outlines the relationship between pages in order of importance.',
                     hasImage: true,
-                    imgUrl: [sitemap]
+                    imgUrl: [{imgUrl:sitemap}]
                 }, {
                     title: 'Wireframes',
                     value: 'The solutions that are considered in the ideate process are converted into "Hi-fi" prototypes',
@@ -211,21 +232,21 @@ class Project extends React.Component {
                 }, {
                     title: 'Current page prototype',
                     hasImage: true,
-                    imgUrl: [flower4]
+                    imgUrl: [{imgUrl: flower4}]
                 }, {
                     title: 'Solution 1',
                     value: 'Using a checkbox on shipping information page',
                     hasImage: true,
-                    imgUrl: [flower3]
+                    imgUrl: [{imgUrl: flower3}]
                 }, {
                     title: 'Solution 2',
                     value: 'Adding a separate page after adding to cart or shipping information to ask if they would like to add a message card if it is a  gift.',
                     hasImage: true,
-                    imgUrl: [flower2]
+                    imgUrl: [{imgUrl: flower2}]
                 }, {
                     title: 'Solution chosen',
                     hasImage: true,
-                    imgUrl: [flower1]
+                    imgUrl: [{imgUrl: flower1}]
                 }, {
                     title: 'Reason',
                     value: 'This solution was chosen to save time, be efficient as well as make the user notice the message card feature. When user clicks add to cart or Buy now, the overlay pops up asking if they would like to add a message card. If they say yes, it takes them to the page where they can add their message and name. From there, they can continue to the shipping information page. If not they will be directed to the shipping information page.',
@@ -333,34 +354,6 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = () => {
     return {}
-}
-
-function CustomCarousel(props) {
-    return (
-        (props.imgUrl.length > 1) ? 
-            <Carousel>
-                {props.imgUrl.map((singleImage, imageKey) => {
-                    return (
-                        <Carousel.Item key={imageKey}>
-                            <IndividualItem  singleImage={singleImage} />
-                        </Carousel.Item>
-                    )
-                })}
-            </Carousel>:
-            props.imgUrl.map((singleImage, imageKey) => {
-                return (
-                    <IndividualItem  singleImage={singleImage} key={imageKey} />
-                )
-            })
-    )
-}
-
-function IndividualItem(props) {
-    return (
-        <div className="img-content">
-            <img src={props.singleImage} alt="Process" />
-        </div>
-    )
 }
 
 export default connect(mapStateToProps, mapDispatchToProps())(Project)

@@ -58,5 +58,24 @@ $breakpoint-min-small-device: 768px;
                 max-width: 500px;
             }
         }
+        .carousel-item {
+            .img-content {
+                text-align: center;
+                padding-bottom: 1rem;
+                margin: 0 auto;
+                max-width: 700px;
+
+                img {
+                    height: auto;
+                    max-width: 100%;
+                }
+            }
+            .carousel-caption {
+                position: relative;
+                left: auto;
+                right: auto;
+                font-size: 1.25rem;
+            }
+        }
     }
 }

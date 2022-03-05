@@ -2,10 +2,20 @@ import React from 'react'
 import './ProjectList.scss'
 
 import { Container, Row, Col, Button } from 'react-bootstrap'
+import CustomCarousel from '../../Components/CustomCarousel/CustomCarousel'
 
 //Images
 import beautifulApp from '../../Assets/Images/beautiful_app.png'
 import plantLife from '../../Assets/Images/flower_and_bouquet.PNG'
+import alarm from '../../Assets/Images/MiniProjects/alarm.png'
+import balance from '../../Assets/Images/MiniProjects/balance.png'
+import diary from '../../Assets/Images/MiniProjects/diary.png'
+import iceCreamParlour1 from '../../Assets/Images/MiniProjects/ice_cream_parlour_1.png'
+import iceCreamParlour2 from '../../Assets/Images/MiniProjects/ice_cream_parlour_2.png'
+import interiorDecor1 from '../../Assets/Images/MiniProjects/interior_decor _1.png'
+import interiorDecor2 from '../../Assets/Images/MiniProjects/interior_decor_2.png'
+import moondeer from '../../Assets/Images/MiniProjects/moondeer.png'
+import photographerPrevUi from '../../Assets/Images/MiniProjects/photographer_prev_ui.png'
 
 // React Redux
 import { connect } from 'react-redux'
@@ -33,6 +43,34 @@ class ProjectList extends React.Component {
                     img: 1,
                     text: 12
                 }
+            }],
+            miniProjectsContent: [{
+                imgUrl: alarm,
+                name: "Alarm"
+            }, {
+                imgUrl: balance,
+                name: "Event Poster"
+            }, {
+                imgUrl: diary,
+                name: "Home page - Diary and biography - Web Design"
+            }, {
+                imgUrl: iceCreamParlour1,
+                name: "Home page - Ice cream parlor - Web Design"
+            }, {
+                imgUrl: iceCreamParlour2,
+                name: "Home page - Ice cream parlor - Web Design"
+            }, {
+                imgUrl: interiorDecor1,
+                name: "Home page - Interior design - Web Design"
+            }, {
+                imgUrl: interiorDecor2,
+                name: "Home page - Interior design - Web Design"
+            }, {
+                imgUrl: moondeer,
+                name: "MoonDeer - showcasing UI design in figma"
+            }, {
+                imgUrl: photographerPrevUi,
+                name: "Profile page - Hire photographer - Mobile app"
             }]
         }
     }
@@ -86,6 +124,10 @@ class ProjectList extends React.Component {
                         )
                     })
                 }
+                <Container className="custom-contain">
+                    <h1>Mini Projects</h1>
+                    <CustomCarousel imgUrl = {this.state.miniProjectsContent} />
+                </Container>
             </div>
         )
     }
