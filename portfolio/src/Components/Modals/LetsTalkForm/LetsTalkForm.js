@@ -70,7 +70,7 @@ class LetsTalkForm extends React.Component {
                 }).catch((err) => {
                     // Hide Loader
                     this.props.LoaderHidden(!this.props.loader.isLoaderShown)
-                    toastr.error('An error occurred! Please try again after sometime')
+                    toastr.error('An error occurred!! Please try again after sometime')
                     console.log(err)
                 })
         }
