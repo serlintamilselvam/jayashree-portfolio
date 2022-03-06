@@ -6,7 +6,7 @@ import CustomCarousel from '../../Components/CustomCarousel/CustomCarousel'
 
 //Images
 import beautifulApp from '../../Assets/Images/beautiful_app.png'
-import plantLife from '../../Assets/Images/flower_and_bouquet.PNG'
+import flowerPrototype from '../../Assets/Images/flower_prototype.png'
 import eventPrototype from '../../Assets/Images/event_prototype.png'
 import alarm from '../../Assets/Images/MiniProjects/alarm.png'
 import balance from '../../Assets/Images/MiniProjects/balance.png'
@@ -48,7 +48,7 @@ class ProjectList extends React.Component {
                 id: 3,
                 title: "The Grow Room, E-Commerce website",
                 description: "A flower and bouquet website, which helps people to purchase and deliver flowers with message cards and. This website showcases a variety of flowers and bouquets that are grown and prepared by local farmers. It mainly focuses on promoting online business by featuring online purchases, discounts, and scheduled deliveries.",
-                img: plantLife,
+                img: flowerPrototype,
                 order: {
                     img: 12,
                     text: 1
