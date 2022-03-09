@@ -56,7 +56,7 @@ class ProjectList extends React.Component {
             }],
             miniProjectsContent: [{
                 imgUrl: alarm,
-                name: "Alarm"
+                name: "Alarm - Soft UI"
             }, {
                 imgUrl: balance,
                 name: "Event Poster"
